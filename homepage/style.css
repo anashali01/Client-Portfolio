@@ -14,12 +14,10 @@
 .container-fluid a{
     color: whitesmoke;
     font-size: 25px;
-    margin-right: -90px;
+    margin-right: -400px;
 }
-.container-fluid form{
-    margin-right: -150px;
+.container-fluid form {
+    margin-right: -400px;
+    margin-left: 200px;
 }
 
-.name-section h1{
-    font-size: 3000px;
-}
