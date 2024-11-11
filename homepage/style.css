@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
 }
+                                         /* N  A  V  B  A  R  */
 
 .container-fluid{
     background-color: rgba(0,0,0,0.50);
@@ -21,3 +22,91 @@
     margin-left: 200px;
 }
 
+                                        /* I  N  T  R  O  D  U  C  T  I  O  N  */
+
+.introduction{
+    width: 100%;
+    height: 100%;
+}
+.introduction h1{
+    font-size: 150px;
+    margin-top: 250px;
+}
+.introduction img{
+    margin-top: -570px;
+    margin-left: 50px;
+}
+.introduction h3{
+    margin-top: -450px;
+    font-size: 30px;
+    word-spacing: 10px;
+    padding: 5px;
+    font-weight: 100;
+}
+
+                                            /* A  B  O  U  T  -  M  E */
+
+.about-me .content{
+    width: 1250px;
+    background-color: black;
+    background-image: url("about-me-bg.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 720px;
+    z-index: 9;
+    margin-top: -150px;
+    border-radius: 20px;
+    padding: 105px 50px;
+    margin-bottom: 90px;
+}
+.about-me .content h1{
+    font-size: 100px;
+    padding-bottom: 60px;
+}
+.about-me .content p{
+    font-size: 25px;
+    margin-bottom: 100px;
+}
+.about-me .content a{
+    background-color: whitesmoke;
+    color: #222222;
+    padding: 10px 250px;
+    text-decoration: none;
+    border-radius: 8px;
+    margin-left: 25%;
+}
+
+
+.ui-ux-work .content{
+    width: 600px;
+    background-color: #222222;
+    height: 600px;
+    margin-left: -150px;
+    padding: 70px 50px;
+    border-radius: 5px;
+}
+.ui-ux-work .content h1{
+    font-size: 60px;
+    margin-bottom: 90px;
+    text-align: center;
+}
+.ui-ux-work .content p{
+    font-size: 30px;
+    text-align: justify;
+    margin-bottom: 90px;
+}
+.ui-ux-work .content a{
+    background-color: whitesmoke;
+    color: black;
+    text-decoration: none;
+    padding: 5px 150px;
+    border-radius: 8px;
+    margin-left: 10%;
+}
+.ui-ux-work  img{
+    height: 600px;
+    width: 1000px;
+    object-fit: cover;
+    border-radius: 5px;
+}
