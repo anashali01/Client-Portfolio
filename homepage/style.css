@@ -3,6 +3,9 @@
     padding: 0;
     box-sizing: border-box;
 }
+body{
+    background-color: #CCCCCC;
+}
                                          /* N  A  V  B  A  R  */
 
 .container-fluid{
@@ -85,6 +88,7 @@
     margin-left: -150px;
     padding: 70px 50px;
     border-radius: 5px;
+    margin-bottom: 40px;
 }
 .ui-ux-work .content h1{
     font-size: 60px;
@@ -95,6 +99,7 @@
     font-size: 30px;
     text-align: justify;
     margin-bottom: 90px;
+    text-align: center;
 }
 .ui-ux-work .content a{
     background-color: whitesmoke;
@@ -109,4 +114,84 @@
     width: 1000px;
     object-fit: cover;
     border-radius: 5px;
+}
+
+                     /* G  R  A  P  H  I  C  S  -  D  E  S  I  G  N  */
+.graphics-work .work-1{
+    margin-left: -150px;
+    width: 512px;
+    height: 720px;
+}
+.graphics-work .work-2{
+    margin-left: -80px;
+   
+}
+.graphics-work .content{
+    width: 571px;
+    background-color: #222222;
+    height: 722px;
+    margin-left: -7.5px;
+    padding: 90px 50px;
+    border-radius: 5px;
+    margin-bottom: 40px;
+}
+.graphics-work .content h1{
+    font-size: 60px;
+    margin-bottom: 110px;
+    text-align: center;
+}
+.graphics-work  .content p{
+    font-size: 30px;
+    text-align: justify;
+    margin-bottom: 110px;
+    text-align: center;
+}
+.graphics-work .content a{
+    background-color: whitesmoke;
+    color: black;
+    text-decoration: none;
+    padding: 5px 150px;
+    border-radius: 8px;
+    margin-left: 10%;
+}
+
+                        /* V  I  D  E  O  -  W  O  R  K */
+.video-work .content{
+    width: 1600px;
+    height: 720px;
+    background-image: url("vid-work.png");
+    background-color: rgba(0,0,0,0.80);
+    background-blend-mode: color-burn;
+    background-position: center;
+    background-size: cover;
+    padding: 285px 200px;
+    margin-bottom: 40px;
+}
+.video-work .content h1{
+    color: whitesmoke;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 120px;
+}
+
+                                /* F  O  T  T  E  R  */
+footer{
+    background-image: url("footer-bg.png");
+    height: 600px;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    background-color: rgba(0,0,0,0.80);
+    background-blend-mode: color-burn;
+}
+footer .content h1{
+    color: whitesmoke;
+    font-size: 80px;
+    margin-top: 85px;
+    margin-bottom: 100px;
+}
+footer .icon{
+    display: flex;
+    align-items: center;
 }
