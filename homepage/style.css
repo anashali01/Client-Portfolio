@@ -195,3 +195,17 @@ footer .icon{
     display: flex;
     align-items: center;
 }
+footer .icon a{
+    transition: 0.5s;
+}
+
+
+
+.container-fluid a:hover{
+    text-decoration: underline;
+    color: whitesmoke;
+    cursor: pointer;
+}
+.icon a:hover{
+    transform: translateY(-20px);
+}

@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container-fluid{
+    background-color: rgba(0,0,0,0.50);
+    padding: 10px;
+    width: 1600px;
+    border-radius: 20px;
+    margin-top: 20px;
+}
+.container-fluid a{
+    color: whitesmoke;
+    font-size: 25px;
+    margin-right: -400px;
+}
+.container-fluid form {
+    margin-right: -400px;
+    margin-left: 200px;
+}
+
+
+.resources h1{
+    font-size: 100px;
+    margin-top: 80px;
+}
+.resources h4{
+    font-size: 45px;
+    margin-top: 20px;
+}
+
+
+.graphics-tool .icon img{
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    margin-left: 80px;
+}
+.graphics-tool .icon h5{
+    font-size: 35px;
+    text-transform: uppercase;
+    text-align: center;
+}
+.graphics-tool .icon .icon-name-4{
+    margin: 0;
+}
+
