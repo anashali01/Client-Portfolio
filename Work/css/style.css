@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* NAVBAR */
+
+.navbar .container-fluid{
+    background-color: rgba(0,0,0,0.50);
+    padding: 10px;
+    width: 1600px;
+    border-radius: 20px;
+    margin-top: 20px;
+}
+.navbar .container-fluid a{
+    color: whitesmoke;
+    font-size: 25px;
+    margin-right: -400px;
+}
+.navbar .container-fluid form {
+    margin-right: -400px;
+    margin-left: 200px;
+}
+
+/* GRAPHICS-UI */
+
+.graphics-ui a{
+    color: black;
+    font-weight: 100;
+}
+
+/* SLIDER */
+
+
+.post-slider img{
+    transition: 0.3s;
+}
+.post-slider img:hover{
+    scale: 1.1;
+}
+.slick-prev , .slick-next{
+    display: none;    
+}
