@@ -32,7 +32,9 @@
 
 /* SLIDER */
 
-
+.slick-slide {
+    margin: 50px 0;
+}
 .post-slider img{
     transition: 0.3s;
 }
@@ -40,5 +42,9 @@
     scale: 1.1;
 }
 .slick-prev , .slick-next{
-    display: none;    
+    display: none;
+    height: 0;
+    width: 0;
+    color: transparent;
+    border: 0;
 }
