@@ -31,18 +31,10 @@
 }
 
 
-.graphics-tool .icon img{
+.graphics-tool .graphic-software img{
     width: 250px;
     height: 250px;
     object-fit: cover;
-    margin-left: 80px;
 }
-.graphics-tool .icon h5{
-    font-size: 35px;
-    text-transform: uppercase;
-    text-align: center;
-}
-.graphics-tool .icon .icon-name-4{
-    margin: 0;
-}
+
 
