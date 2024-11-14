@@ -41,10 +41,50 @@
 .post-slider img:hover{
     scale: 1.1;
 }
-.slick-prev , .slick-next{
+/* .slick-prev , .slick-next{
     display: none;
     height: 0;
     width: 0;
     color: transparent;
     border: 0;
+} */
+.slick-prev{
+    font-size: 0;
+    position: absolute;
+    z-index: 999;
+    top: 50%;
+    border: 0;
+    background-color:  transparent;
+    display: block;
+    color: white;
+    width: 80px;
+    height: 40px;
+    padding: 0;
+    margin-left: 40px;
+    -webkit-transform: translate(0, -50%);
+    -ms-transform: translate(0, -50%);
+    transform: translate(0, -50%);
 }
+.slick-next{
+    font-size: 0;
+    position: absolute;
+    z-index: 999;
+    top: 50%;
+    border: 0;
+    background-color: transparent;
+    display: block;
+    color: white;
+    width: 80px;
+    height: 40px;
+    padding: 0;
+    margin-left: 40px;
+    -webkit-transform: translate(0, -50%);
+    -ms-transform: translate(0, -50%);
+    transform: translate(2200%, -50%);  /* FULL JUGGAD fix in mq */
+}
+.slick-prev:before {
+    content: url('../assets/left-arrow.png');
+  }
+  .slick-next:before {
+    content: url('../assets/right-arrow.png');
+  }

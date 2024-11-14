@@ -39,4 +39,5 @@ $('.multiple-items').slick({
     slidesToScroll: 1
     
   });
+
 });
