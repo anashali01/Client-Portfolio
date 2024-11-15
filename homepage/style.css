@@ -35,10 +35,13 @@ body{
 .introduction h1{
     font-size: 150px;
     margin-top: 250px;
+   
+    white-space: nowrap;
 }
 .introduction img{
     margin-top: -570px;
     margin-left: 50px;
+  
 }
 .introduction h3{
     margin-top: -450px;
@@ -210,4 +213,13 @@ footer .icon a{
 }
 .icon a:hover{
     transform: translateY(-20px);
+}
+
+@keyframes slide {
+    0%{
+        transform: translateX(100%);
+    }
+    100%{
+        transform: translateX(-100%);
+    }
 }

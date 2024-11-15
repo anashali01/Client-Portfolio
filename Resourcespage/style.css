@@ -66,16 +66,34 @@
     margin-top: 200px;
     margin-bottom: 60px;
 }
-.research-tool .research-software img{
-    width: 250px;
-    height: 250px;
-
+.research-tool .research-software .img-fluid2{
+   width: 200px;
+   height: 200px;
+   margin-top: 60px;
+   border-radius: 50px;
+}
+.research-tool .research-software .img-fluid{
+   width: 300px;
+   height: 300px;
+}
+.research-tool .research-software .img-fluid3{
+   width: 250px;
+   height: 250px;
+   margin-top: 40px;
 }
 .research-tool .research-software h5{
 
     font-size: 20px;
     text-transform: uppercase;
 }
+.research-tool .research-software .be-text{
+    margin-top: 30px;
+}
+.research-tool .research-software .gpt-text{
+    margin-top: -18px;
+}
+
+
 
 
 footer{
@@ -109,3 +127,5 @@ footer .icon a{
 .icon a:hover{
     transform: translateY(-20px);
 }
+
+
