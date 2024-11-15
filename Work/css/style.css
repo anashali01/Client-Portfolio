@@ -3,6 +3,13 @@
     padding: 0;
     box-sizing: border-box;
 }
+body{
+    background-color: #CCCCCC;
+}
+
+h2{
+    font-weight: 100;
+}
 
 /* NAVBAR */
 
@@ -93,4 +100,51 @@
 }
 .slick-next:before {
     content: url('../assets/right-arrow.png');
+}
+
+/* BRANDING */
+
+.branding .col-4 img{
+   margin-left: 60px;
+}
+
+/* BUSINESS */
+
+.business .col-6 img{
+    margin-left: 80px;
+}
+
+                                /* F  O  O  T  E  R  */
+footer{
+    background-image: url("../assets/footer-bg.png");
+    height: 600px;
+    margin-top: 80px;
+    background-position: center;
+    background-size: cover;
+    background-color: rgba(0,0,0,0.80);
+    background-blend-mode: color-burn;
+}
+footer .content h1{
+    color: whitesmoke;
+    font-size: 80px;
+    margin-top: 85px;
+    margin-bottom: 100px;
+}
+footer .icon{
+    display: flex;
+    align-items: center;
+}
+footer .icon a{
+    transition: 0.5s;
+}
+
+
+
+.container-fluid a:hover{
+    text-decoration: underline;
+    color: whitesmoke;
+    cursor: pointer;
+}
+.icon a:hover{
+    transform: translateY(-20px);
 }
