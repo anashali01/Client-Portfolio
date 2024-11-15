@@ -23,6 +23,12 @@
     margin-left: 200px;
 }
 
+/* MODAL WORK **** */
+
+.modal img{
+    margin-left: -250px;
+}
+
 /* GRAPHICS-UI */
 
 .graphics-ui a{
@@ -84,7 +90,7 @@
 }
 .slick-prev:before {
     content: url('../assets/left-arrow.png');
-  }
-  .slick-next:before {
+}
+.slick-next:before {
     content: url('../assets/right-arrow.png');
-  }
+}
