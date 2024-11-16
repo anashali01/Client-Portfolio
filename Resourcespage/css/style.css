@@ -1,0 +1,171 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container-fluid{
+    background-color: rgba(0,0,0,0.50);
+    padding: 10px;
+    width: 1400px;
+    border-radius: 20px;
+    margin-top: 20px;
+}
+.container-fluid a{
+    color: whitesmoke;
+    font-size: 25px;
+    margin-right: -400px;
+}
+.container-fluid form {
+    margin-right: -400px;
+    margin-left: 200px;
+}
+
+
+.resources h1{
+    font-size: 125px;
+    margin-top: 80px;
+    font-family: "Alumni Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+}
+.resources h4{
+    font-size: 45px;
+    margin-top: 20px;
+    font-family: "Julius Sans One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+.graphics-tool h1{
+    margin-top: 150px;
+    margin-bottom: 30px;
+    font-family: "Alumni Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 125px;
+}
+.graphics-tool .graphic-software img{
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+}
+.graphics-tool .graphic-software h5{
+    font-size: 20px;
+    text-transform: uppercase;
+    font-family: "Julius Sans One", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+}
+
+
+.ui-tool h1{
+    margin-top: 160px;
+    margin-bottom: 65px;
+    font-family: "Alumni Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 125px;
+}
+.ui-tool .ui-software img{
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+}
+.ui-tool .ui-software h5{
+    font-family: "Julius Sans One", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+
+.research-tool h1{
+    margin-top: 200px;
+    margin-bottom: 60px;
+    font-family: "Alumni Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 125px;
+}
+.research-tool .research-software .img-fluid2{
+   width: 200px;
+   height: 200px;
+   margin-top: 60px;
+   border-radius: 50px;
+}
+.research-tool .research-software .img-fluid{
+   width: 300px;
+   height: 300px;
+}
+.research-tool .research-software .img-fluid3{
+   width: 250px;
+   height: 250px;
+   margin-top: 40px;
+}
+.research-tool .research-software h5{
+    font-family: "Julius Sans One", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+.research-tool .research-software .be-text{
+    margin-top: 30px;
+    font-family: "Julius Sans One", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+}
+.research-tool .research-software .gpt-text{
+    margin-top: -18px;
+    font-family: "Julius Sans One", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+}
+
+
+
+
+footer{
+    background-image: url("../assets/footer-bg.png");
+    height: 600px;
+    margin-top: 60px;
+    background-position: center;
+    background-size: cover;
+    background-color: rgba(0,0,0,0.80);
+    background-blend-mode: color-burn;
+}
+footer .content h1{
+    color: whitesmoke;
+    font-size: 80px;
+    margin-top: 85px;
+    margin-bottom: 100px;
+    font-family: "Alumni Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 125px;
+}
+footer .icon{
+    display: flex;
+    align-items: center;
+}
+footer .icon a{
+    transition: 0.5s;
+}
+
+.container-fluid a:hover{
+    text-decoration: underline;
+    color: whitesmoke;
+    cursor: pointer;
+}
+.icon a:hover{
+    transform: translateY(-20px);
+}
+
+

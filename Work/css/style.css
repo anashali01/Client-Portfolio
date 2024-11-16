@@ -128,7 +128,12 @@ footer .content h1{
     color: whitesmoke;
     font-size: 80px;
     margin-top: 85px;
-    margin-bottom: 100px;
+    margin-bottom: 125px;
+    font-family: "Alumni Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 125px;
 }
 footer .icon{
     display: flex;

@@ -37,15 +37,18 @@ body {
     height: 100%;
 }
 
-.introduction h1 {
-    font-size: 150px;
-    margin-top: 250px;
-
-    white-space: nowrap;
+.slide{
+    position: relative;
+    width: 100%;
 }
-
+.introduction .slide video{
+    position: absolute;
+    z-index: -100;
+    margin-left: -400px;
+    margin-top: -200px;
+}
 .introduction img {
-    margin-top: -570px;
+    margin-top: -140px;
     margin-left: 50px;
 
 }
@@ -56,6 +59,9 @@ body {
     word-spacing: 10px;
     padding: 5px;
     font-weight: 100;
+    font-family: "Julius Sans One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
 /* A  B  O  U  T  -  M  E */
@@ -71,18 +77,25 @@ body {
     z-index: 9;
     margin-top: -150px;
     border-radius: 20px;
-    padding: 105px 50px;
+    padding: 80px 50px;
     margin-bottom: 90px;
 }
 
 .about-me .content h1 {
-    font-size: 100px;
-    padding-bottom: 60px;
+    font-size: 150px;
+    padding-bottom: 10px;
+    font-family: "Alumni Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
 }
 
 .about-me .content p {
     font-size: 25px;
     margin-bottom: 100px;
+    font-family: "Kodchasan", sans-serif;
+     font-weight: 700;
+     font-style: normal;
 }
 
 .about-me .content a {
@@ -91,6 +104,7 @@ body {
     padding: 10px 250px;
     text-decoration: none;
     border-radius: 8px;
+    transition: 2s;
 }
 
 
@@ -105,16 +119,23 @@ body {
 }
 
 .ui-ux-work .content h1 {
-    font-size: 60px;
-    margin-bottom: 90px;
+    font-size: 100px;
+    margin-bottom: 50px;
     text-align: center;
+    font-family: "Alumni Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
 }
 
 .ui-ux-work .content p {
     font-size: 30px;
     text-align: justify;
-    margin-bottom: 90px;
+    margin-bottom: 70px;
     text-align: center;
+    font-family: "Kodchasan", sans-serif;
+   font-weight: 700;
+   font-style: normal;
 }
 
 .ui-ux-work .content a {
@@ -150,22 +171,30 @@ body {
     background-color: #222222;
     height: 722px;
     margin-left: 30px;
-    padding: 90px 50px;
+    padding: 40px 20px;
     border-radius: 5px;
     margin-bottom: 40px;
 }
 
 .graphics-work .content h1 {
-    font-size: 50px;
-    margin-bottom: 110px;
+    font-size: 90px;
+    margin-top: 40px;
+    margin-bottom: 80px;
     text-align: center;
+    font-family: "Alumni Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
 }
 
 .graphics-work .content p {
     font-size: 30px;
     text-align: justify;
-    margin-bottom: 110px;
+    margin-bottom: 90px;
     text-align: center;
+    font-family: "Kodchasan", sans-serif;
+  font-weight: 700;
+  font-style: normal;
 }
 
 .graphics-work .content a {
@@ -194,14 +223,17 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 120px;
+    font-size: 150px;
+    font-family: "Alumni Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
 }
 
 /* F  O  T  T  E  R  */
 footer {
     background-image: url("../assets/Images/footer-bg.png");
     height: 600px;
-
     background-position: center;
     background-size: cover;
     background-color: rgba(0, 0, 0, 0.80);
@@ -210,9 +242,13 @@ footer {
 
 footer .content h1 {
     color: whitesmoke;
-    font-size: 80px;
+    font-size: 100px;
     margin-top: 85px;
     margin-bottom: 100px;
+    font-family: "Alumni Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
 }
 
 footer .icon {
@@ -235,6 +271,7 @@ footer .icon a {
 .icon a:hover {
     transform: translateY(-20px);
 }
+
 
 @keyframes slide {
     0% {
