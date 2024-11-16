@@ -9,24 +9,24 @@ body{
 }
                                          /* N  A  V  B  A  R  */
 
-.container-fluid{
+.navbar .container-fluid{
     background-color: rgba(0,0,0,0.50);
     padding: 10px;
     width: 1400px;
     border-radius: 20px;
     margin-top: 20px;
 }
-.container-fluid a{
+.navbar .container-fluid a{
     color: whitesmoke;
     font-size: 25px;
     margin-right: -400px;
 }
-.container-fluid form {
+.navbar .container-fluid form {
     margin-right: -400px;
     margin-left: 200px;
 }
 
-
+                                        /* I  N  T  R  O  D  U  C  T  I  O  N */
 
 .logo-section h1{
     margin-top: -40px;
@@ -35,6 +35,7 @@ body{
     font-style: normal;
 }
 
+                                        /* D E S C R I P T I O N  - S E C T I O N */
 
 .description-section .col-12{
     background-color: #222222;
@@ -60,9 +61,14 @@ body{
     border-radius: 8px;
 }
 
+                                        /* S K I L L S  -  S E C T I O N */
+
 .skill{
     margin-top: 170px;
 }
+
+                                        /* S O F T - S K I L L */
+
 .skill .soft-skill{
     background-color: #222222;
     width: 645px;
@@ -91,8 +97,7 @@ body{
   font-style: normal;
 }
 
-
-
+                                        /* H A R D - S K I L L  */
 
 .skill .hard-skill{
     background-color: #222222;
@@ -122,6 +127,7 @@ body{
   font-style: normal;
 }
 
+                                        /* V I D E O - W O R k - S E C T I O N  */
 
 .video-work .col-12{
     background-image: url("../assets/Images/editing-bg.png");
@@ -148,6 +154,7 @@ body{
     font-style: normal;
 }
 
+                                        /* F  O  T  T  E  R */
 
 footer{
     background-image: url("../assets/Images/footer-bg.png");
@@ -176,6 +183,7 @@ footer .icon a{
     transition: 0.5s;
 }
 
+                                            /* H O V E R - E F F E C T */
 
 .container-fluid a:hover{
     text-decoration: underline;

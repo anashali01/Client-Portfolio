@@ -11,7 +11,7 @@ body {
 
 /* N  A  V  B  A  R  */
 
-.container-fluid {
+.navbar .container-fluid {
     background-color: rgba(0, 0, 0, 0.50);
     padding: 10px;
     width: 1400px;
@@ -19,13 +19,13 @@ body {
     margin-top: 20px;
 }
 
-.container-fluid a {
+.navbar .container-fluid a {
     color: whitesmoke;
     font-size: 25px;
     margin-right: -400px;
 }
 
-.container-fluid form {
+.navbar .container-fluid form {
     margin-right: -400px;
     margin-left: 200px;
 }
@@ -37,7 +37,7 @@ body {
     height: 100%;
 }
 
-.slide{
+.introduction .slide{
     position: relative;
     width: 100%;
 }
@@ -52,7 +52,6 @@ body {
     margin-left: 50px;
 
 }
-
 .introduction h3 {
     margin-top: -450px;
     font-size: 30px;
@@ -107,6 +106,7 @@ body {
     transition: 2s;
 }
 
+                            /* U  I  -  U  X  -  D  E  S  I  G  N */
 
 .ui-ux-work .content {
     width: 600px;
@@ -154,7 +154,8 @@ body {
     margin-left: 40px;
 }
 
-/* G  R  A  P  H  I  C  S  -  D  E  S  I  G  N  */
+                         /* G  R  A  P  H  I  C  S  -  D  E  S  I  G  N  */
+
 .graphics-work .work-1 {
     margin-left: -100px;
     width: 500px;
@@ -205,7 +206,8 @@ body {
     border-radius: 8px;
 }
 
-/* V  I  D  E  O  -  W  O  R  K */
+                        /* V  I  D  E  O  -  W  O  R  K */
+
 .video-work .content {
     width: 1500px;
     height: 720px;
@@ -230,7 +232,8 @@ body {
     font-style: normal;
 }
 
-/* F  O  T  T  E  R  */
+                                     /* F  O  T  T  E  R  */
+                                     
 footer {
     background-image: url("../assets/Images/footer-bg.png");
     height: 600px;
