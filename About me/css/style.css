@@ -1,0 +1,152 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box
+}
+body{
+    background-color: #CCCCCC;
+    overflow-x: hidden;
+}
+                                         /* N  A  V  B  A  R  */
+
+.container-fluid{
+    background-color: rgba(0,0,0,0.50);
+    padding: 10px;
+    width: 1400px;
+    border-radius: 20px;
+    margin-top: 20px;
+}
+.container-fluid a{
+    color: whitesmoke;
+    font-size: 25px;
+    margin-right: -400px;
+}
+.container-fluid form {
+    margin-right: -400px;
+    margin-left: 200px;
+}
+
+
+
+.logo-section h1{
+    margin-top: -40px;
+}
+
+
+.description-section .col-12{
+    background-color: #222222;
+    width: 1400px;
+    height: 500px;
+    border-radius: 30px;
+    margin-top: 85px;
+}
+.description-section .col-12 p{
+    color: whitesmoke;
+    font-size: 28px;
+    margin-top: 15px;
+    margin-bottom: 100px;
+}
+.description-section .col-12 a{
+    background-color: whitesmoke;
+    color: #222222;
+    padding: 10px 250px;
+    text-decoration: none;
+    border-radius: 8px;
+}
+
+.skill{
+    margin-top: 170px;
+}
+.skill .soft-skill{
+    background-color: #222222;
+    width: 645px;
+    height: 645px;
+    margin-left: -74px;
+    border-radius: 50px;
+}
+.skill .soft-skill h1{
+    color: whitesmoke;
+    text-align: center;
+    font-size: 100px;
+}
+.skill .soft-skill ul{
+    margin-left: 200px;
+}
+.skill .soft-skill ul li{
+    color: whitesmoke;
+    font-size: 25px;
+}
+
+
+
+
+.skill .hard-skill{
+    background-color: #222222;
+    width: 645px;
+    height: 645px; 
+    margin-left: 74px; 
+    border-radius: 50px;
+}
+.skill .hard-skill h1{
+    color: whitesmoke;
+    font-size: 100px;
+    text-align: center;
+}
+.skill .hard-skill ul{
+    margin-left: 170px;
+}
+.skill .hard-skill ul li{
+    color: whitesmoke;
+    font-size: 25px;
+}
+
+
+.video-work .col-12{
+    background-image: url("../assets/Images/editing-bg.png");
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: color-burn;
+    background-color: rgba(34,34,34,0.80);
+    height: 600px;
+    margin-top: 170px;
+    padding: 235px 200px;
+}
+.video-work .col-12 h1{
+    color: whitesmoke;
+    text-align: center;
+    font-size: 90px;
+}
+
+
+footer{
+    background-image: url("../assets/Images/footer-bg.png");
+    height: 600px;
+    background-position: center;
+    background-size: cover;
+    background-color: rgba(0,0,0,0.80);
+    background-blend-mode: color-burn;
+    margin-top: 200px;
+}
+footer .content h1{
+    color: whitesmoke;
+    font-size: 80px;
+    margin-top: 85px;
+    margin-bottom: 100px;
+}
+footer .icon{
+    display: flex;
+    align-items: center;
+}
+footer .icon a{
+    transition: 0.5s;
+}
+
+
+.container-fluid a:hover{
+    text-decoration: underline;
+    color: whitesmoke;
+    cursor: pointer;
+}
+.icon a:hover{
+    transform: translateY(-20px);
+}

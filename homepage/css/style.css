@@ -1,49 +1,56 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-body{
+
+body {
     background-color: #CCCCCC;
     overflow-x: hidden;
 }
-                                         /* N  A  V  B  A  R  */
 
-.container-fluid{
-    background-color: rgba(0,0,0,0.50);
+/* N  A  V  B  A  R  */
+
+.container-fluid {
+    background-color: rgba(0, 0, 0, 0.50);
     padding: 10px;
     width: 1400px;
     border-radius: 20px;
     margin-top: 20px;
 }
-.container-fluid a{
+
+.container-fluid a {
     color: whitesmoke;
     font-size: 25px;
     margin-right: -400px;
 }
+
 .container-fluid form {
     margin-right: -400px;
     margin-left: 200px;
 }
 
-                                        /* I  N  T  R  O  D  U  C  T  I  O  N  */
+/* I  N  T  R  O  D  U  C  T  I  O  N  */
 
-.introduction{
+.introduction {
     width: 100%;
     height: 100%;
 }
-.introduction h1{
+
+.introduction h1 {
     font-size: 150px;
     margin-top: 250px;
-   
+
     white-space: nowrap;
 }
-.introduction img{
+
+.introduction img {
     margin-top: -570px;
     margin-left: 50px;
-  
+
 }
-.introduction h3{
+
+.introduction h3 {
     margin-top: -450px;
     font-size: 30px;
     word-spacing: 10px;
@@ -51,12 +58,12 @@ body{
     font-weight: 100;
 }
 
-                                            /* A  B  O  U  T  -  M  E */
+/* A  B  O  U  T  -  M  E */
 
-.about-me .content{
+.about-me .content {
     width: 1250px;
     background-color: black;
-    background-image: url("about-me-bg.png");
+    background-image: url("../assets/Images/about-me-bg.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -67,25 +74,27 @@ body{
     padding: 105px 50px;
     margin-bottom: 90px;
 }
-.about-me .content h1{
+
+.about-me .content h1 {
     font-size: 100px;
     padding-bottom: 60px;
 }
-.about-me .content p{
+
+.about-me .content p {
     font-size: 25px;
     margin-bottom: 100px;
 }
-.about-me .content a{
+
+.about-me .content a {
     background-color: whitesmoke;
     color: #222222;
     padding: 10px 250px;
     text-decoration: none;
     border-radius: 8px;
-    margin-left: 25%;
 }
 
 
-.ui-ux-work .content{
+.ui-ux-work .content {
     width: 600px;
     background-color: #222222;
     height: 600px;
@@ -94,26 +103,29 @@ body{
     border-radius: 5px;
     margin-bottom: 40px;
 }
-.ui-ux-work .content h1{
+
+.ui-ux-work .content h1 {
     font-size: 60px;
     margin-bottom: 90px;
     text-align: center;
 }
-.ui-ux-work .content p{
+
+.ui-ux-work .content p {
     font-size: 30px;
     text-align: justify;
     margin-bottom: 90px;
     text-align: center;
 }
-.ui-ux-work .content a{
+
+.ui-ux-work .content a {
     background-color: whitesmoke;
     color: black;
     text-decoration: none;
     padding: 5px 150px;
     border-radius: 8px;
-    margin-left: 10%;
 }
-.ui-ux-work  img{
+
+.ui-ux-work img {
     height: 600px;
     width: 900px;
     object-fit: cover;
@@ -121,17 +133,19 @@ body{
     margin-left: 40px;
 }
 
-                     /* G  R  A  P  H  I  C  S  -  D  E  S  I  G  N  */
-.graphics-work .work-1{
+/* G  R  A  P  H  I  C  S  -  D  E  S  I  G  N  */
+.graphics-work .work-1 {
     margin-left: -100px;
     width: 500px;
     height: 720px;
     object-fit: cover;
 }
-.graphics-work .work-2{
+
+.graphics-work .work-2 {
     margin-left: -40px;
 }
-.graphics-work .content{
+
+.graphics-work .content {
     width: 481px;
     background-color: #222222;
     height: 722px;
@@ -140,39 +154,42 @@ body{
     border-radius: 5px;
     margin-bottom: 40px;
 }
-.graphics-work .content h1{
+
+.graphics-work .content h1 {
     font-size: 50px;
     margin-bottom: 110px;
     text-align: center;
 }
-.graphics-work  .content p{
+
+.graphics-work .content p {
     font-size: 30px;
     text-align: justify;
     margin-bottom: 110px;
     text-align: center;
 }
-.graphics-work .content a{
+
+.graphics-work .content a {
     background-color: whitesmoke;
     color: black;
     text-decoration: none;
     padding: 5px 110px;
     border-radius: 8px;
-    margin-left: 10%;
 }
 
-                        /* V  I  D  E  O  -  W  O  R  K */
-.video-work .content{
+/* V  I  D  E  O  -  W  O  R  K */
+.video-work .content {
     width: 1500px;
     height: 720px;
-    background-image: url("vid-work.png");
-    background-color: rgba(0,0,0,0.80);
+    background-image: url("../assets/Images/vid-work.png");
+    background-color: rgba(0, 0, 0, 0.80);
     background-blend-mode: color-burn;
     background-position: center;
     background-size: cover;
     padding: 285px 200px;
     margin-bottom: 40px;
 }
-.video-work .content h1{
+
+.video-work .content h1 {
     color: whitesmoke;
     display: flex;
     justify-content: center;
@@ -180,46 +197,51 @@ body{
     font-size: 120px;
 }
 
-                                /* F  O  T  T  E  R  */
-footer{
-    background-image: url("footer-bg.png");
+/* F  O  T  T  E  R  */
+footer {
+    background-image: url("../assets/Images/footer-bg.png");
     height: 600px;
 
     background-position: center;
     background-size: cover;
-    background-color: rgba(0,0,0,0.80);
+    background-color: rgba(0, 0, 0, 0.80);
     background-blend-mode: color-burn;
 }
-footer .content h1{
+
+footer .content h1 {
     color: whitesmoke;
     font-size: 80px;
     margin-top: 85px;
     margin-bottom: 100px;
 }
-footer .icon{
+
+footer .icon {
     display: flex;
     align-items: center;
 }
-footer .icon a{
+
+footer .icon a {
     transition: 0.5s;
 }
 
 
 
-.container-fluid a:hover{
+.container-fluid a:hover {
     text-decoration: underline;
     color: whitesmoke;
     cursor: pointer;
 }
-.icon a:hover{
+
+.icon a:hover {
     transform: translateY(-20px);
 }
 
 @keyframes slide {
-    0%{
+    0% {
         transform: translateX(100%);
     }
-    100%{
+
+    100% {
         transform: translateX(-100%);
     }
 }

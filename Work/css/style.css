@@ -13,19 +13,19 @@ h2{
 
 /* NAVBAR */
 
-.navbar .container-fluid{
+.container-fluid{
     background-color: rgba(0,0,0,0.50);
     padding: 10px;
-    width: 1600px;
+    width: 1400px;
     border-radius: 20px;
     margin-top: 20px;
 }
-.navbar .container-fluid a{
+.container-fluid a{
     color: whitesmoke;
     font-size: 25px;
     margin-right: -400px;
 }
-.navbar .container-fluid form {
+.container-fluid form {
     margin-right: -400px;
     margin-left: 200px;
 }
