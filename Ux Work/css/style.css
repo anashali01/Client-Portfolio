@@ -1,0 +1,111 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #CCCCCC;
+    overflow-x: hidden;
+}
+
+h2{
+    font-weight: 100;
+}
+.graphics-ui a{
+    color: black;
+    font-weight: 100;
+    text-decoration: none;
+}
+.graphics-ui a:hover{
+    text-decoration: underline;
+}
+
+/* N  A  V  B  A  R  */
+
+.navbar .container-fluid {
+    background-color: rgba(0, 0, 0, 0.50);
+    padding: 10px;
+    width: 1400px;
+    border-radius: 20px;
+    margin-top: 20px;
+}
+
+.navbar .container-fluid a {
+    color: whitesmoke;
+    font-size: 25px;
+    margin-right: -400px;
+}
+
+.navbar .container-fluid form {
+    margin-right: -400px;
+    margin-left: 200px;
+}
+
+/* MOBILE UI */
+
+.mobile-ui ul{
+    margin: 0 25px 0 25px;
+}
+.mobile-ui ul li{
+    text-align: center;
+}
+.mobile-ui ul img{
+    transition: 0.3s;
+}
+.mobile-ui ul img:hover{
+    transform: scale(1.2);
+}
+
+/* WEB-DESIGN */
+
+.web-design ul li{
+    text-align: center;
+}
+
+/* MODAL WORK **** */
+
+.modal img{
+    margin-left: -450px;
+}
+
+
+                                /* F  O  O  T  E  R  */
+footer{
+    background-image: url("../assets/footer-bg.png");
+    height: 600px;
+    margin-top: 80px;
+    background-position: center;
+    background-size: cover;
+    background-color: rgba(0,0,0,0.80);
+    background-blend-mode: color-burn;
+}
+footer .content h1{
+    color: whitesmoke;
+    font-size: 80px;
+    margin-top: 85px;
+    margin-bottom: 125px;
+    font-family: "Alumni Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 125px;
+}
+footer .icon{
+    display: flex;
+    align-items: center;
+}
+footer .icon a{
+    transition: 0.5s;
+}
+
+
+
+.container-fluid a:hover{
+    text-decoration: underline;
+    color: whitesmoke;
+    cursor: pointer;
+}
+.icon a:hover{
+    transform: translateY(-20px);
+}
