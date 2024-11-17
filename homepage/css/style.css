@@ -218,6 +218,7 @@ body {
     background-size: cover;
     padding: 285px 200px;
     margin-bottom: 40px;
+    border-radius: 25px;
 }
 
 .video-work .content h1 {
