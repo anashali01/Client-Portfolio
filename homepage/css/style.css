@@ -44,7 +44,7 @@ body {
 .introduction .slide video{
     position: absolute;
     z-index: -100;
-    margin-left: -400px;
+    margin-left: -310px;
     margin-top: -200px;
 }
 .introduction img {
