@@ -95,10 +95,26 @@ h2{
     height: 40px;
     padding: 0;
     margin-left: 40px;
-    -webkit-transform: translate(0, -50%);
-    -ms-transform: translate(0, -50%);
+    -webkit-transform: translate(2200%, -50%);
+    -ms-transform: translate(2200%, -50%);
     transform: translate(2200%, -50%);  /* FULL JUGGAD fix in mq */
 }
+
+@media(max-width:1500px){
+    .slick-next{
+        -webkit-transform: translate(1650%, -50%);
+        -ms-transform: translate(1650%, -50%);
+        transform: translate(1650%, -50%);  /* FULL JUGGAD fix in mq */
+    }
+}
+@media(max-width:1200px){
+    .slick-next{
+        -webkit-transform: translate(1300%, -50%);
+        -ms-transform: translate(1300%, -50%);
+        transform: translate(1300%, -50%);  /* FULL JUGGAD fix in mq */
+    }
+}
+
 .slick-prev:before {
     content: url('../assets/left-arrow.png');
 }
