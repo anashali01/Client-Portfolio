@@ -41,6 +41,10 @@ h2{
 .graphics-ui a{
     color: black;
     font-weight: 100;
+    text-decoration: none;
+}
+.graphics-ui a:hover{
+    text-decoration: underline;
 }
 
 /* SLIDER */
