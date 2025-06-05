@@ -22,45 +22,87 @@ body {
 .navbar .container-fluid a {
     color: whitesmoke;
     font-size: 25px;
-    margin-right: -400px;
 }
 
-.navbar .container-fluid form {
-    margin-right: -400px;
-    margin-left: 200px;
-}
 
 /* I  N  T  R  O  D  U  C  T  I  O  N  */
-
-.introduction {
-    width: 100%;
-    height: 100%;
+/* Slider Start */
+.scroller {
+    max-width: 100%;
+    background-color: var(--secondary-color);
+    padding: 20px 0;
+    font-family: var(--main-font);
+    
 }
 
-.introduction .slide{
-    position: relative;
-    width: 100%;
+.scroller h1 {
+    font-size: 300px;
+    font-family: "Alumni Sans", sans-serif;
+    
 }
-.introduction .slide video{
-    position: absolute;
-    z-index: -100;
-    margin-left: -310px;
-    margin-top: -200px;
+
+.scroller__inner {
+    display: flex;
+    padding-block: 1rem;
+    flex-wrap: wrap;
+    gap: 1rem;
 }
-.introduction img {
-    margin-top: -140px;
-    margin-left: 50px;
+
+.scroller[data-animated="true"] {
+    overflow: hidden;
 
 }
-.introduction h3 {
-    margin-top: -450px;
-    font-size: 30px;
-    word-spacing: 10px;
-    padding: 5px;
-    font-weight: 100;
-    font-family: "Julius Sans One", sans-serif;
-    font-weight: 400;
-    font-style: normal;
+
+.scroller[data-animated="true"] .scroller__inner {
+    width: max-content;
+    flex-wrap: nowrap;
+    animation: scroll var(--_animation-duration, 60s) var(--_animation-direction, forwards) linear infinite;
+    animation-delay: 1s;
+}
+
+.scroller[data-direction='left'] {
+    --_animation-direction: forwards;
+}
+
+.scroller[data-direction='right'] {
+    --_animation-direction: reverse;
+}
+
+.scroller[data-direction='slow'] {
+    --_animation-duration: 20s;
+}
+
+.scroller[data-speed='fast'] {
+    --_animation-duration: 10s;
+}
+
+
+@keyframes scroll {
+    to {
+        transform: translate(calc(-50% - 0.5rem));
+    }
+}
+
+
+.scroller[data-animated="true"] .scroller__inner:has(img:hover, img:active, img:focus) {
+    -webkit-animation-play-state: paused;
+    animation-play-state: paused;
+}
+
+
+.scroller[data-animated="true"] .scroller__inner:has(li:hover, li:active, li:focus) {
+    -webkit-animation-play-state: paused;
+    animation-play-state: paused;
+}
+
+/* SLIDER END */
+.hero-section .heading {
+    margin-top: 650px;
+}
+
+.hero-section .image {
+    margin-right: 170px;
+    margin-top: -120px;
 }
 
 /* A  B  O  U  T  -  M  E */
@@ -74,7 +116,7 @@ body {
     background-size: cover;
     height: 720px;
     z-index: 9;
-    margin-top: -150px;
+    margin-top: -120px;
     border-radius: 20px;
     padding: 80px 50px;
     margin-bottom: 90px;
@@ -93,8 +135,8 @@ body {
     font-size: 25px;
     margin-bottom: 100px;
     font-family: "Kodchasan", sans-serif;
-     font-weight: 700;
-     font-style: normal;
+    font-weight: 700;
+    font-style: normal;
 }
 
 .about-me .content a {
@@ -106,21 +148,47 @@ body {
     transition: 2s;
 }
 
-                            /* U  I  -  U  X  -  D  E  S  I  G  N */
+.service .img-1{
+    background-image: url("../assets/Images/emily-bernal-v9vII5gV8Lw-unsplash.jpg");
+    background-size: cover;
+    height: 200px;
+    background-attachment: fixed;
+    border-radius: 80px;
+}
+.service .img-1 h2 , .service .img-2 h2 , .service .img-3 h2{
+    font-size: 45px;
+    font-family: kodchasan;
+    font-weight: 800;
+}
+.service .img-2{
+    background-image: url("../assets/Images/jakob-owens-B4f_Kx5jvpg-unsplash.jpg");
+    background-size: cover;
+    height: 200px;
+    background-attachment: fixed;
+    border-radius: 80px;
+    margin-top: 20px;
+}
+.service .img-3{
+    background-image: url("../assets/Images/Web.jpg");
+    background-size: cover;
+    height: 200px;
+    background-attachment: fixed;
+    border-radius: 80px;
+    margin: 30px 0px;
+}
+/* U  I  -  U  X  -  D  E  S  I  G  N */
 
 .ui-ux-work .content {
-    width: 600px;
-    background-color: #222222;
-    height: 600px;
-    margin-left: -90px;
-    padding: 70px 50px;
-    border-radius: 5px;
+    
+    background-color: #222222;   
+    padding: 60px 50px;
+    border-radius: 25px;
     margin-bottom: 40px;
 }
 
 .ui-ux-work .content h1 {
     font-size: 100px;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
     text-align: center;
     font-family: "Alumni Sans", sans-serif;
     font-optical-sizing: auto;
@@ -129,13 +197,13 @@ body {
 }
 
 .ui-ux-work .content p {
-    font-size: 30px;
+    font-size: 20px;
     text-align: justify;
-    margin-bottom: 70px;
+    margin-bottom: 30px;
     text-align: center;
     font-family: "Kodchasan", sans-serif;
-   font-weight: 700;
-   font-style: normal;
+    font-weight: 700;
+    font-style: normal;
 }
 
 .ui-ux-work .content a {
@@ -148,13 +216,12 @@ body {
 
 .ui-ux-work img {
     height: 600px;
-    width: 900px;
     object-fit: cover;
-    border-radius: 5px;
+    border-radius: 25px;
     margin-left: 40px;
 }
 
-                         /* G  R  A  P  H  I  C  S  -  D  E  S  I  G  N  */
+/* G  R  A  P  H  I  C  S  -  D  E  S  I  G  N  */
 
 .graphics-work .work-1 {
     margin-left: -100px;
@@ -194,8 +261,8 @@ body {
     margin-bottom: 90px;
     text-align: center;
     font-family: "Kodchasan", sans-serif;
-  font-weight: 700;
-  font-style: normal;
+    font-weight: 700;
+    font-style: normal;
 }
 
 .graphics-work .content a {
@@ -206,7 +273,7 @@ body {
     border-radius: 8px;
 }
 
-                        /* V  I  D  E  O  -  W  O  R  K */
+/* V  I  D  E  O  -  W  O  R  K */
 
 .video-work .content {
     width: 1500px;
@@ -233,8 +300,8 @@ body {
     font-style: normal;
 }
 
-                                     /* F  O  T  T  E  R  */
-                                     
+/* F  O  T  T  E  R  */
+
 footer {
     background-image: url("../assets/Images/footer-bg.png");
     height: 600px;
