@@ -178,49 +178,25 @@ body {
 }
 /* U  I  -  U  X  -  D  E  S  I  G  N */
 
-.ui-ux-work .content {
-    
-    background-color: #222222;   
-    padding: 60px 50px;
-    border-radius: 25px;
-    margin-bottom: 40px;
+.ui-ux-work .text{
+    background-color: #222222;
+    color: #CCCCCC;
 }
+.ui-ux-work .text h2{
+    font-size: 60px;
+    font-weight: 900;
 
-.ui-ux-work .content h1 {
-    font-size: 100px;
-    margin-bottom: 30px;
-    text-align: center;
-    font-family: "Alumni Sans", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 700;
-    font-style: normal;
 }
-
-.ui-ux-work .content p {
-    font-size: 20px;
-    text-align: justify;
-    margin-bottom: 30px;
-    text-align: center;
-    font-family: "Kodchasan", sans-serif;
-    font-weight: 700;
-    font-style: normal;
+.ui-ux-work .text p{
+    text-align: justify !important;
+    font-size: 18px;
 }
-
-.ui-ux-work .content a {
-    background-color: whitesmoke;
-    color: black;
-    text-decoration: none;
-    padding: 5px 150px;
-    border-radius: 8px;
+.ui-ux-work .text a{
+    background-color: #CCCCCC;
+    color: #222222;
+    font-weight: 200;
+    text-decoration: none;  
 }
-
-.ui-ux-work img {
-    height: 600px;
-    object-fit: cover;
-    border-radius: 25px;
-    margin-left: 40px;
-}
-
 /* G  R  A  P  H  I  C  S  -  D  E  S  I  G  N  */
 
 .graphics-work .work-1 {
