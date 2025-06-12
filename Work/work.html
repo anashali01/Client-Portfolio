@@ -36,20 +36,20 @@
 
   <header>
     <!-- N  A  V  B  A  R -->
-       <nav class="navbar custom-navbar my-3">
+    <nav class="navbar custom-navbar my-3">
       <div class="container justify-content-center">
         <ul class="nav nav-pills justify-content-center w-100">
           <li class="nav-item">
-            <a class="nav-link text-white" href="#">Home</a>
+            <a class="nav-link text-white" href="../index.html">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link text-white" href="#">Designs</a>
+            <a class="nav-link text-white" href="../Work/work.html">Designs</a>
           </li>
           <li class="nav-item ms-auto">
-            <a class="nav-link text-white" href="#">About Me</a>
+            <a class="nav-link text-white" href="../About me/aboutme.html">About Me</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link text-white" href="#">Resources</a>
+            <a class="nav-link text-white" href="../Resourcespage/resource.html">Resources</a>
           </li>
         </ul>
       </div>
@@ -72,23 +72,37 @@
     <!-- S O C I A L    M E D I A   P O S T S  -->
     <h2 class="text-center py-5">SOCIAL MEDIA POSTS</h2>
 
-    <div class="post-slider multiple-items">
-      <div><button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modalSmp-1"><img
-            data-lazy="./assets/smp-1.png" alt=""></button></div>
-      <div><button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modalSmp-2"><img
-            data-lazy="./assets/smp-2.png" alt=""></button></div>
-      <div><button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modalSmp-3"><img
-            data-lazy="./assets/smp-3.png" alt=""></button></div>
-      <div><button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modalSmp-4"><img
-            data-lazy="./assets/smp-4.png" alt=""></button></div>
-      <div><button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modalSmp-5"><img
-            data-lazy="./assets/smp-5.png" alt=""></button></div>
-      <div><button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modalSmp-6"><img
-            data-lazy="./assets/smp-6.png" alt=""></button></div>
-      <div><button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modalSmp-7"><img
-            data-lazy="./assets/smp-7.png" alt=""></button></div>
-      <div><button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modalSmp-8"><img
-            data-lazy="./assets/smp-8.png" alt=""></button></div>
+    <div class="d-flex">
+      <button onclick="Goprev()" class="control-btns">prev</button>
+      <div class="container">
+        <div class="slides d-flex">
+          <div class="slide">
+            <img src="./assets/smp-1.png" alt="">
+          </div>
+          <div class="slide">
+            <img src="./assets/smp-2.png" alt="">
+          </div>
+          <div class="slide">
+            <img src="./assets/smp-3.png" alt="">
+          </div>
+          <div class="slide">
+            <img src="./assets/smp-4.png" alt="">
+          </div>
+          <div class="slide">
+            <img src="./assets/smp-5.png" alt="">
+          </div>
+          <div class="slide">
+            <img src="./assets/smp-6.png" alt="">
+          </div>
+          <div class="slide">
+            <img src="./assets/smp-7.png" alt="">
+          </div>
+          <div class="slide">
+            <img src="./assets/smp-8.png" alt="">
+          </div>
+        </div>
+      </div>
+      <button onclick="Gonext()" class="control-btns">Next</button>
     </div>
 
     <!-- SMP MODALS  -->
@@ -155,13 +169,20 @@
     <h2 class="text-center py-5">POSTERS AND MAGAZINE COVERS</h2>
 
     <div class="post-slider multiple-items">
-      <div><button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modalPoster-1"><img data-lazy="./assets/poster-1.png" alt=""></button></div>
-      <div><button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modalPoster-2"><img data-lazy="./assets/poster-2.png" alt=""></button></div>
-      <div><button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modalPoster-3"><img data-lazy="./assets/poster-3.png" alt=""></button></div>
-      <div><button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modalPoster-4"><img data-lazy="./assets/poster-4.png" alt=""></button></div>
-      <div><button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modalPoster-5"><img data-lazy="./assets/poster-5.png" alt=""></button></div>
-      <div><button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modalPoster-6"><img data-lazy="./assets/poster-6.png" alt=""></button></div>
-      <div><button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modalPoster-7"><img data-lazy="./assets/poster-7.png" alt=""></button></div>
+      <div><button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modalPoster-1"><img
+            data-lazy="./assets/poster-1.png" alt=""></button></div>
+      <div><button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modalPoster-2"><img
+            data-lazy="./assets/poster-2.png" alt=""></button></div>
+      <div><button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modalPoster-3"><img
+            data-lazy="./assets/poster-3.png" alt=""></button></div>
+      <div><button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modalPoster-4"><img
+            data-lazy="./assets/poster-4.png" alt=""></button></div>
+      <div><button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modalPoster-5"><img
+            data-lazy="./assets/poster-5.png" alt=""></button></div>
+      <div><button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modalPoster-6"><img
+            data-lazy="./assets/poster-6.png" alt=""></button></div>
+      <div><button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modalPoster-7"><img
+            data-lazy="./assets/poster-7.png" alt=""></button></div>
     </div>
 
     <!-- Poster MODALS  -->
@@ -215,10 +236,10 @@
       </div>
     </div>
 
-  <!-- BRANDING -->
+    <!-- BRANDING -->
 
-  <h2 class="text-center py-5">BRANDING</h2>
-  <div class="branding">
+    <h2 class="text-center py-5">BRANDING</h2>
+    <div class="branding">
       <div class="row">
         <div class="col-4">
           <img src="./assets/branding-1.png" alt="">
@@ -230,12 +251,12 @@
           <img src="./assets/branding-3.png" alt="">
         </div>
       </div>
-  </div> 
+    </div>
 
-  <!-- BUSINESS CARD -->
+    <!-- BUSINESS CARD -->
 
-  <h2 class="text-center py-5">BUSINESS CARDS</h2>
-  <div class="business container">
+    <h2 class="text-center py-5">BUSINESS CARDS</h2>
+    <div class="business container">
       <div class="row">
         <div class="col-6">
           <img src="./assets/business-card-1.png" alt="">
@@ -244,11 +265,11 @@
           <img src="./assets/business-card-2.png" alt="">
         </div>
       </div>
-  </div>
+    </div>
 
-</main>
+  </main>
 
-                                         <!-- F  O  O  T  E  R   -->
+  <!-- F  O  O  T  E  R   -->
   <footer>
     <div class="container">
       <div class="row">
@@ -256,10 +277,13 @@
           <h1>Find Me Here Too</h1>
         </div>
         <div class="icon d-flex justify-content-evenly align-content-center">
-            <a href="https://www.linkedin.com/in/najeebali-saiyed-b06677325/"><img src="./assets/linkdin-icon.png" alt="linkdin-icon"></a>
-            <a href="https://www.glassdoor.co.in/member/profile"><img src="./assets/glassdor-icon.png" alt="glassdor-icon"></a>
-            <a href="https://dribbble.com/najeeb_17"><img src="./assets/dribble-icon.png" alt="dribble-icon"></a>
-            <a href="https://www.behance.net/saiyednajibali/projects"><img src="./assets/behance-icon.png" alt="behance-icon"></a>
+          <a href="https://www.linkedin.com/in/najeebali-saiyed-b06677325/"><img src="./assets/linkdin-icon.png"
+              alt="linkdin-icon"></a>
+          <a href="https://www.glassdoor.co.in/member/profile"><img src="./assets/glassdor-icon.png"
+              alt="glassdor-icon"></a>
+          <a href="https://dribbble.com/najeeb_17"><img src="./assets/dribble-icon.png" alt="dribble-icon"></a>
+          <a href="https://www.behance.net/saiyednajibali/projects"><img src="./assets/behance-icon.png"
+              alt="behance-icon"></a>
         </div>
       </div>
     </div>
