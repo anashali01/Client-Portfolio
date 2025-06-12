@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Michroma&display=swap');
+
 *{
     margin: 0;
     padding: 0;
@@ -24,6 +26,18 @@ body{
     margin-left: 200px;
 }
 
+
+/* NAVBAR */
+
+.navbar{
+    background-color: rgba(0, 0, 0, 0.50);
+    width: 90%;
+    margin: auto;
+    border: 0px solid;
+    border-radius: 8px;
+    font-family: "Michroma", sans-serif;
+    font-size: 18px;
+}
 
 .resources h1{
     font-size: 125px;

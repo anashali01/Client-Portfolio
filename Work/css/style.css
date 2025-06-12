@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Michroma&display=swap');
+
 *{
     margin: 0;
     padding: 0;
@@ -29,6 +31,17 @@ h2{
     margin-right: -400px;
     margin-left: 200px;
 }
+/* N  A  V  B  A  R  */
+
+.navbar{
+    background-color: rgba(0, 0, 0, 0.50);
+    width: 90%;
+    margin: auto;
+    border: 0px solid;
+    border-radius: 8px;
+    font-family: "Michroma", sans-serif;
+    font-size: 18px;
+}
 
 /* MODAL WORK **** */
 
@@ -49,78 +62,19 @@ h2{
 
 /* SLIDER */
 
-.slick-slide {
-    margin: 50px 0;
+.slide{
+    transition: 1s;
 }
-.post-slider img{
-    transition: 0.3s;
+.slide{
+    margin: 20px;
 }
-.post-slider img:hover{
-    scale: 1.1;
-}
-/* .slick-prev , .slick-next{
-    display: none;
-    height: 0;
-    width: 0;
-    color: transparent;
-    border: 0;
-} */
-.slick-prev{
-    font-size: 0;
-    position: absolute;
-    z-index: 999;
-    top: 50%;
-    border: 0;
-    background-color:  transparent;
-    display: block;
-    color: white;
-    width: 80px;
-    height: 40px;
-    padding: 0;
-    margin-left: 40px;
-    -webkit-transform: translate(0, -50%);
-    -ms-transform: translate(0, -50%);
-    transform: translate(0, -50%);
-}
-.slick-next{
-    font-size: 0;
-    position: absolute;
-    z-index: 999;
-    top: 50%;
-    border: 0;
-    background-color: transparent;
-    display: block;
-    color: white;
-    width: 80px;
-    height: 40px;
-    padding: 0;
-    margin-left: 40px;
-    -webkit-transform: translate(2200%, -50%);
-    -ms-transform: translate(2200%, -50%);
-    transform: translate(2200%, -50%);  /* FULL JUGGAD fix in mq */
+.control-btns{
+    position: relative;
+    z-index: 9;
+    margin: 0 20px;
 }
 
-@media(max-width:1500px){
-    .slick-next{
-        -webkit-transform: translate(1650%, -50%);
-        -ms-transform: translate(1650%, -50%);
-        transform: translate(1650%, -50%);  /* FULL JUGGAD fix in mq */
-    }
-}
-@media(max-width:1200px){
-    .slick-next{
-        -webkit-transform: translate(1300%, -50%);
-        -ms-transform: translate(1300%, -50%);
-        transform: translate(1300%, -50%);  /* FULL JUGGAD fix in mq */
-    }
-}
 
-.slick-prev:before {
-    content: url('../assets/left-arrow.png');
-}
-.slick-next:before {
-    content: url('../assets/right-arrow.png');
-}
 
 /* BRANDING */
 
@@ -173,3 +127,5 @@ footer .icon a{
 .icon a:hover{
     transform: translateY(-20px);
 }
+
+/* CUSTOM ARROWS */
