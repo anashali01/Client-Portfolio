@@ -178,75 +178,36 @@ body {
 }
 /* U  I  -  U  X  -  D  E  S  I  G  N */
 
-.ui-ux-work .text{
+.ui-ux-work .text , .graphics-work .text{
     background-color: #222222;
     color: #CCCCCC;
+    border-radius: 20px;
 }
-.ui-ux-work .text h2{
+.ui-ux-work .text h2 , .graphics-work .text h2{
     font-size: 60px;
     font-weight: 900;
-
 }
-.ui-ux-work .text p{
+.ui-ux-work .text p , .graphics-work .text p{
     text-align: justify !important;
     font-size: 18px;
 }
-.ui-ux-work .text a{
+.ui-ux-work .text a , .graphics-work .text a{
     background-color: #CCCCCC;
     color: #222222;
     font-weight: 200;
     text-decoration: none;  
 }
+.ui-ux-work .image img{
+    height: 500px;
+    width: 640px;
+    border-radius: 20px;
+}
 /* G  R  A  P  H  I  C  S  -  D  E  S  I  G  N  */
 
-.graphics-work .work-1 {
-    margin-left: -100px;
-    width: 500px;
-    height: 720px;
-    object-fit: cover;
-}
-
-.graphics-work .work-2 {
-    margin-left: -40px;
-}
-
-.graphics-work .content {
-    width: 481px;
-    background-color: #222222;
-    height: 722px;
-    margin-left: 30px;
-    padding: 40px 20px;
-    border-radius: 5px;
-    margin-bottom: 40px;
-}
-
-.graphics-work .content h1 {
-    font-size: 90px;
-    margin-top: 40px;
-    margin-bottom: 80px;
-    text-align: center;
-    font-family: "Alumni Sans", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 700;
-    font-style: normal;
-}
-
-.graphics-work .content p {
-    font-size: 30px;
-    text-align: justify;
-    margin-bottom: 90px;
-    text-align: center;
-    font-family: "Kodchasan", sans-serif;
-    font-weight: 700;
-    font-style: normal;
-}
-
-.graphics-work .content a {
-    background-color: whitesmoke;
-    color: black;
-    text-decoration: none;
-    padding: 5px 110px;
-    border-radius: 8px;
+.graphics-work .image img{
+    height: 700px;
+    width: 540px;
+    border-radius: 20px;
 }
 
 /* V  I  D  E  O  -  W  O  R  K */

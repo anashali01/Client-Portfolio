@@ -1,0 +1,68 @@
+/* Mobile first approach */
+
+/* Base styles (mobile devices) */
+.ui-ux-work .image img,
+.graphics-work .image img {
+    height: 150px;
+    width: 100%;
+    object-fit: cover;
+}
+
+/* Small devices (smartphones) */
+@media screen and (min-width: 576px) {
+
+    .ui-ux-work .image img,
+    .graphics-work .image img {
+        height: 400px;
+        width: 520px;
+        /* margin-top: 25px; */
+    }
+}
+
+/* Medium devices (tablets) */
+@media screen and (min-width: 768px) {
+
+    .ui-ux-work .image img {
+        height: 100%;
+        width: 100%;
+        object-position: center;
+
+    }
+    .graphics-work .image img{
+        height: 650px;
+        width: 100%;
+        object-position: center;
+    }
+}
+
+/* Large devices (desktops) */
+@media screen and (min-width: 992px) {
+    .ui-ux-work .image img {
+        height: 450px;
+        width: 640px;
+        object-fit: cover;
+    }
+
+    .ui-ux-work .text h2 {
+        font-size: 40px;
+        padding-bottom: 20px !important;
+        font-weight: 900;
+    }
+
+    .ui-ux-work .text p {
+        text-align: justify !important;
+        font-size: 18px;
+    }
+
+    .graphics-work .image img {
+        height: 700px;
+        width: 540px;
+        border-radius: 20px;
+    }
+}
+
+/* Extra large devices (large desktops) */
+@media screen and (min-width: 1200px) {}
+
+/* XXL devices (larger desktops) */
+@media screen and (min-width: 1400px) {}
