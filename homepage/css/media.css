@@ -38,7 +38,7 @@
 /* Large devices (desktops) */
 @media screen and (min-width: 992px) {
     .ui-ux-work .image img {
-        height: 450px;
+        height: 600px;
         width: 640px;
         object-fit: cover;
     }
