@@ -28,6 +28,7 @@
 
   <!-- GOOGLE FONT -->
   <link href="https://fonts.googleapis.com/css2?family=Alumni+Sans:ital,wght@0,700;1,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../Fonts/Moderniz/stylesheet.css">
 
 
 </head>
@@ -57,11 +58,10 @@
 
     <!-- GRAPHICS / UI DESIGN SELECTOR -->
 
-    <div class="container">
-      <div class="graphics-ui d-flex justify-content-center mt-5 fs-3">
-        <a href="#" class="mx-4">GRAPHICS DESIGNS</a>
-        <a href="../Ux Work/ux.html" class="mx-4">UI/UX DESIGNS</a>
-      </div>
+    <div class="container work-selector text-center">
+        <button class="rounded-pill p-2">UI/UX DESIGNS</button>
+        <button class="rounded-pill p-2 work-active">GRAPHICS DESIGNS</button>
+        <button class="rounded-pill p-2">VIDEO EDITING</button>
     </div>
 
   </header>
@@ -73,7 +73,7 @@
     <h2 class="text-center py-5">SOCIAL MEDIA POSTS</h2>
 
     <div class="d-flex">
-      <button onclick="Goprev()" class="control-btns">prev</button>
+      <button onclick="Goprev()" class="control-btns rounded-pill btn"><</button>
       <div class="container">
         <div class="slides d-flex">
           <div class="slide">
@@ -102,7 +102,7 @@
           </div>
         </div>
       </div>
-      <button onclick="Gonext()" class="control-btns">Next</button>
+      <button onclick="Gonext()" class="control-btns rounded-pill btn">></button>
     </div>
 
     <!-- SMP MODALS  -->
@@ -237,7 +237,7 @@
     </div>
 
     <!-- BRANDING -->
-
+<!-- 
     <h2 class="text-center py-5">BRANDING</h2>
     <div class="branding">
       <div class="row">
@@ -288,7 +288,7 @@
       </div>
     </div>
   </footer>
-</body>
+</body> -->
 
 <!-- BOOTSTRAP JS -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
