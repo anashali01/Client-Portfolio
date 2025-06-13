@@ -1,17 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Michroma&display=swap');
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box
 }
-body{
+
+body {
     background-color: #CCCCCC;
     overflow-x: hidden;
 }
-                                         /* N  A  V  B  A  R  */
 
-.navbar{
+/* N  A  V  B  A  R  */
+
+.navbar {
     background-color: rgba(0, 0, 0, 0.50);
     width: 90%;
     margin: auto;
@@ -21,90 +23,70 @@ body{
     font-size: 18px;
 }
 
-   /* I  N  T  R  O  D  U  C  T  I  O  N */
-.card{
+/* I  N  T  R  O  D  U  C  T  I  O  N */
+.card {
     background-color: #CCCCCC;
     border: 0;
-  border-radius: 10px;
+    border-radius: 10px;
 }
 
-.card-inner{
-  position: relative;
-  width: 80%;
-  height: 100%;
-  padding-bottom: 100%;
-  transition: transform 0.6s;
-  transform-style: preserve-3d;
+.card-inner {
+    position: relative;
+    width: 80%;
+    height: 100%;
+    padding-bottom: 100%;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
 }
 
-.card:hover .card-inner{
-  transform: rotateY(180deg);
+.card:hover .card-inner {
+    transform: rotateY(180deg);
 }
 
-.card-front, .card-back{
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  backface-visibility: hidden;
-  border-radius: 20px;
+.card-front,
+.card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 20px;
 }
 
 
-.card-back{
-  
-  transform: rotateY(180deg);
+.card-back {
+
+    transform: rotateY(180deg);
 }
-.cv .cv-description{
+
+.cv .cv-description {
     background-color: #222222;
     padding: 15px 40px;
     border-radius: 20px;
 }
-.cv-description p{
+
+.cv-description p {
     font-size: 32px;
     color: whitesmoke;
 }
-                                        /* D E S C R I P T I O N  - S E C T I O N */
 
-.description-section .col-12{
-    background-color: #222222;
-    width: 1400px;
-    height: 500px;
-    border-radius: 30px;
-    margin-top: 85px;
-}
-.description-section .col-12 p{
-    color: whitesmoke;
-    font-size: 28px;
-    margin-top: 15px;
-    margin-bottom: 80px;
-    font-family: "Kodchasan", sans-serif;
-    font-weight: 700;
-    font-style: normal;
-}
-.description-section .col-12 a{
-    background-color: whitesmoke;
-    color: #222222;
-    padding: 10px 250px;
-    text-decoration: none;
-    border-radius: 8px;
-}
 
-                                        /* S K I L L S  -  S E C T I O N */
+/* S K I L L S  -  S E C T I O N */
 
-.skill{
+.skill {
     margin-top: 170px;
 }
 
-                                        /* S O F T - S K I L L */
+/* S O F T - S K I L L */
 
-.skill .soft-skill{
+.skill .soft-skill {
     background-color: #222222;
     width: 645px;
     height: 645px;
     margin-left: -74px;
     border-radius: 50px;
 }
-.skill .soft-skill h1{
+
+.skill .soft-skill h1 {
     color: whitesmoke;
     text-align: center;
     font-size: 130px;
@@ -114,27 +96,30 @@ body{
     font-style: normal;
     text-transform: uppercase;
 }
-.skill .soft-skill ul{
+
+.skill .soft-skill ul {
     margin-left: 200px;
 }
-.skill .soft-skill ul li{
+
+.skill .soft-skill ul li {
     color: whitesmoke;
     font-size: 25px;
     font-family: "Kodchasan", sans-serif;
-  font-weight: 700;
-  font-style: normal;
+    font-weight: 700;
+    font-style: normal;
 }
 
-                                        /* H A R D - S K I L L  */
+/* H A R D - S K I L L  */
 
-.skill .hard-skill{
+.skill .hard-skill {
     background-color: #222222;
     width: 645px;
-    height: 645px; 
-    margin-left: 74px; 
+    height: 645px;
+    margin-left: 74px;
     border-radius: 50px;
 }
-.skill .hard-skill h1{
+
+.skill .hard-skill h1 {
     color: whitesmoke;
     font-size: 120px;
     text-align: center;
@@ -144,31 +129,52 @@ body{
     font-style: normal;
     text-transform: uppercase;
 }
-.skill .hard-skill ul{
+
+.skill .hard-skill ul {
     margin-left: 170px;
 }
-.skill .hard-skill ul li{
+
+.skill .hard-skill ul li {
     color: whitesmoke;
     font-size: 25px;
     font-family: "Kodchasan", sans-serif;
-  font-weight: 700;
-  font-style: normal;
+    font-weight: 700;
+    font-style: normal;
 }
 
-                                        /* V I D E O - W O R k - S E C T I O N  */
+.achievements h2 {
+    color: #222222;
+    font-size: 40px;
+}
 
-.video-work .col-12{
+.achievements .certificate-1 img,
+.achievements .certificate-2 img,
+.achievements .certificate-3 img {
+    width: 100%;
+}
+
+.achievements .certificate-1 h3,
+.achievements .certificate-2 h3,
+.achievements .certificate-3 h3 {
+    color: #222222;
+    font-size: 40px;
+}
+
+/* V I D E O - W O R k - S E C T I O N  */
+
+.video-work .col-12 {
     background-image: url("../assets/Images/editing-bg.png");
     background-size: cover;
     background-position: center;
     background-blend-mode: color-burn;
-    background-color: rgba(34,34,34,0.80);
+    background-color: rgba(34, 34, 34, 0.80);
     height: 600px;
     margin-top: 170px;
     padding: 215px 200px;
     border-radius: 30px;
 }
-.video-work .col-12 h1{
+
+.video-work .col-12 h1 {
     color: whitesmoke;
     text-align: center;
     font-size: 110px;
@@ -182,18 +188,19 @@ body{
     font-style: normal;
 }
 
-                                        /* F  O  T  T  E  R */
+/* F  O  T  T  E  R */
 
-footer{
+footer {
     background-image: url("../assets/Images/footer-bg.png");
     height: 600px;
     background-position: center;
     background-size: cover;
-    background-color: rgba(0,0,0,0.80);
+    background-color: rgba(0, 0, 0, 0.80);
     background-blend-mode: color-burn;
     margin-top: 200px;
 }
-footer .content h1{
+
+footer .content h1 {
     color: whitesmoke;
     font-size: 110px;
     margin-top: 85px;
@@ -203,21 +210,24 @@ footer .content h1{
     font-weight: 700;
     font-style: normal;
 }
-footer .icon{
+
+footer .icon {
     display: flex;
     align-items: center;
 }
-footer .icon a{
+
+footer .icon a {
     transition: 0.5s;
 }
 
-                                            /* H O V E R - E F F E C T */
+/* H O V E R - E F F E C T */
 
-.container-fluid a:hover{
+.container-fluid a:hover {
     text-decoration: underline;
     color: whitesmoke;
     cursor: pointer;
 }
-.icon a:hover{
+
+.icon a:hover {
     transform: translateY(-20px);
 }

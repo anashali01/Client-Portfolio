@@ -56,7 +56,7 @@ body{
 }
 
 
-.graphics-tool h1{
+.graphics-tool h2{
     margin-top: 150px;
     margin-bottom: 30px;
     font-family: "Alumni Sans", sans-serif;
@@ -79,7 +79,7 @@ body{
 }
 
 
-.ui-tool h1{
+.ui-tool h2 , .video-tool h2{
     margin-top: 160px;
     margin-bottom: 65px;
     font-family: "Alumni Sans", sans-serif;
@@ -88,12 +88,12 @@ body{
     font-style: normal;
     font-size: 125px;
 }
-.ui-tool .ui-software img{
+.ui-tool .ui-software img {
     width: 250px;
     height: 250px;
     object-fit: cover;
 }
-.ui-tool .ui-software h5{
+.ui-tool .ui-software h5 , .video-tool .video-software h5{
     font-family: "Julius Sans One", sans-serif;
     font-weight: 800;
     font-style: normal;
@@ -101,8 +101,14 @@ body{
     text-transform: uppercase;
 }
 
+ .video-tool .video-software img{
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    margin-bottom: 20px;
+ }
 
-.research-tool h1{
+.research-tool h2{
     margin-top: 200px;
     margin-bottom: 60px;
     font-family: "Alumni Sans", sans-serif;
