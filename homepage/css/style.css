@@ -105,48 +105,28 @@ body {
 }
 
 /* A  B  O  U  T  -  M  E */
-
-.about-me .content {
-    width: 1250px;
-    background-color: black;
-    background-image: url("../assets/Images/about-me-bg.png");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 720px;
-    z-index: 9;
-    margin-top: -120px;
-    border-radius: 20px;
-    padding: 80px 50px;
-    margin-bottom: 90px;
+.about-me .text{ 
+    background-color: #222222;
+    color: #CCCCCC;
+    padding: 20px 95px; 
+    border-radius: 25px;  
 }
-
-.about-me .content h1 {
-    font-size: 150px;
-    padding-bottom: 10px;
-    font-family: "Alumni Sans", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 700;
-    font-style: normal;
+.about-me h2{
+    font-size: 64px;
+    padding: 20px 0px;
 }
-
-.about-me .content p {
+.about-me p{
     font-size: 25px;
-    margin-bottom: 100px;
-    font-family: "Kodchasan", sans-serif;
-    font-weight: 700;
-    font-style: normal;
+    padding: 20px 0px;
 }
-
-.about-me .content a {
-    background-color: whitesmoke;
-    color: #222222;
-    padding: 10px 250px;
-    text-decoration: none;
-    border-radius: 8px;
-    transition: 2s;
+.about-me .btn {
+    background-color: #CCCCCC;
+    margin: 20px 0px;
 }
-
+.about-me .btn a{
+    color: #222222 !important;
+    padding: 11px 30px;
+}
 .service .img-1{
     background-image: url("../assets/Images/emily-bernal-v9vII5gV8Lw-unsplash.jpg");
     background-size: cover;
@@ -229,7 +209,7 @@ footer {
     background-blend-mode: color-burn;
 }
 
-footer .content h1 {
+footer .content h2 {
     color: whitesmoke;
     font-size: 100px;
     margin-top: 85px;
