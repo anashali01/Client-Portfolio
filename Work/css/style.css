@@ -169,3 +169,14 @@ footer .icon a{
 }
 
 /* CUSTOM ARROWS */
+
+.slides2 {
+  overflow: visible !important;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.slide2 {
+  transition: 1s;
+  margin: 20px;
+}
