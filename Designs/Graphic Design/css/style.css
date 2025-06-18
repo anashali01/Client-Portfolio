@@ -69,6 +69,7 @@ h2{
 .work-selector button{
     background-color: transparent;
     border: solid 1px black;
+    margin: 0 5px;
 }
 .work-active{
     background-color: black!important;
@@ -98,7 +99,7 @@ h2{
     transition: 1s;
 }
 .slide{
-    margin: 20px;
+    margin: 0px;
 }
 .control-btns{
     position: relative;
