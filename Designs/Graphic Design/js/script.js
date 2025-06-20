@@ -2,8 +2,10 @@
 const slides = document.querySelectorAll('.slide');
 const indicators = document.querySelectorAll('.indicator');
 const slides2 = document.querySelectorAll('.slide2');
+const slides3 = document.querySelectorAll('.slide3');
 var counter = 0;
 var counter2 = 0;
+let counter3 = 0;
 
 slides.forEach(
     (slide, index) => {
@@ -14,7 +16,12 @@ slides2.forEach(
     (slide, index) => {
         slide.style.left = `${index * 100}%`;
     }
-)
+);
+slides3.forEach(
+    (slide, index) => {
+        slide.style.left = `${index * 100}%`;
+    }
+);
 
 
 const Goprev = () => {
@@ -67,6 +74,27 @@ const slideCategory = () => {
         }
     );
 
+}
+function EcoPrev() {
+    counter3--;
+    if (counter3 < 0) {
+        counter3 = slides3.length - 1;
+    }
+    slideEco();
+}
+function EcoNext() {
+    counter3++;
+    if (counter3 >= slides3.length) {
+        counter3 = 0;
+    }
+    slideEco();
+}
+function slideEco() {
+    slides3.forEach(
+        (slide) => {
+            slide.style.transform = `translateX(-${counter3 * 100}%)`;
+        }
+    );
 }
 
 // ---------------------- Card Section Slider End ------------------
