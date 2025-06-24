@@ -84,6 +84,10 @@ h2{
     background-color: black!important;
     color: white;
 }
+.work-selector button a{
+  color: inherit; 
+  text-decoration: none;
+}
 
 
 /* MODAL WORK **** */
@@ -182,6 +186,33 @@ h2{
 }
 
 .slide3 img {
+  width: 100vw;           /* Image fills the slide */
+  max-width: 100vw;
+  height: auto;
+  display: block;
+}
+
+/* Fourth slider styles */
+.slides4 {
+  overflow: visible !important;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+  width: 100vw;           /* Full viewport width */
+  max-width: 100vw;       /* Prevents container from limiting width */
+  margin-left: calc(-50vw + 50%); /* Center the full-width slider inside a container */
+  transition: 1s;
+}
+
+.slide4 {
+  min-width: 100vw;       /* Each slide is full viewport width */
+  max-width: 100vw;
+  transition: 1s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.slide4 img {
   width: 100vw;           /* Image fills the slide */
   max-width: 100vw;
   height: auto;
