@@ -1,98 +1,36 @@
 // ---------------------- Card Section Slider Start ------------------
-const slides = document.querySelectorAll('.slide');
-const indicators = document.querySelectorAll('.indicator');
-const slides2 = document.querySelectorAll('.slide2');
-const slides3 = document.querySelectorAll('.slide3');
-var counter = 0;
-var counter2 = 0;
-let counter3 = 0;
+const slides1 = document.querySelectorAll('.slide1');
 
-slides.forEach(
+var counter = 0;
+
+
+slides1.forEach(
     (slide, index) => {
         slide.style.left = `${index * 100}%`;
     }
 )
-slides2.forEach(
-    (slide, index) => {
-        slide.style.left = `${index * 100}%`;
-    }
-);
-slides3.forEach(
-    (slide, index) => {
-        slide.style.left = `${index * 100}%`;
-    }
-);
 
 
-const Goprev = () => {
+
+
+function RedPrev() {
     counter--;
     if (counter < 0) {
-        counter = slides.length - 1; 
+        counter = slides1.length - 1;
     }
-    slideImage();
+    slideRed();
 }
-const Prev = () => {
-    counter2--;
-    if (counter2 < 0) {
-        counter2 = slides2.length - 1; 
-    }
-    slideCategory();
-}
-const Gonext = () => {
+function RedNext() {
     counter++;
-    if (counter >= slides.length) {
-        counter = 0; 
+    if (counter >= slides1.length) {
+        counter = 0;
     }
-    slideImage();
+    slideRed();
 }
-const Next = () => {
-    counter2++;
-    if (counter2 >= slides2.length) {
-        counter2 = 0; 
-    }
-    slideCategory();
-}
-
-const slideImage = () => {
-    slides.forEach(
+function slideRed() {
+    slides1.forEach(
         (slide) => {
             slide.style.transform = `translateX(-${counter * 100}%)`;
-        }
-    );
-    indicators.forEach((indicator, index) => {
-        if (index === counter) {
-            indicator.classList.add('indi-active');
-        } else {
-            indicator.classList.remove('indi-active');
-        }
-    });
-}
-const slideCategory = () => {
-    slides2.forEach(
-        (slide) => {
-            slide.style.transform = `translateX(-${counter2 * 100}%)`;
-        }
-    );
-
-}
-function EcoPrev() {
-    counter3--;
-    if (counter3 < 0) {
-        counter3 = slides3.length - 1;
-    }
-    slideEco();
-}
-function EcoNext() {
-    counter3++;
-    if (counter3 >= slides3.length) {
-        counter3 = 0;
-    }
-    slideEco();
-}
-function slideEco() {
-    slides3.forEach(
-        (slide) => {
-            slide.style.transform = `translateX(-${counter3 * 100}%)`;
         }
     );
 }

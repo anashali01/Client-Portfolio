@@ -17,22 +17,7 @@ body{
   overflow: visible !important;
 }
 
-/* If you want to specifically target the slides wrapper: */
-.slides {
-  overflow: visible !important;
-  padding-left: 0 !important;
-  padding-right: 40px;
-}
 
-.slide {
-  margin-left: 0 !important;
-  margin-right: 20px; /* or your desired gap between slides */
-}
-
-/* Remove left margin from the first slide only */
-.slides .slide:first-child {
-  margin-left: 0 !important;
-}
 
 h2{
     font-weight: 100;
@@ -165,7 +150,7 @@ h2{
 }
 
 /* Third slider styles */
-.slides3 {
+.slides1 {
   overflow: visible !important;
   padding-left: 0 !important;
   padding-right: 0 !important;
@@ -175,7 +160,7 @@ h2{
   transition: 1s;
 }
 
-.slide3 {
+.slide1 {
   min-width: 100vw;       /* Each slide is full viewport width */
   max-width: 100vw;
   transition: 1s;
@@ -184,7 +169,7 @@ h2{
   align-items: center;
 }
 
-.slide3 img {
+.slide1 img {
   width: 100vw;           /* Image fills the slide */
   max-width: 100vw;
   height: auto;
