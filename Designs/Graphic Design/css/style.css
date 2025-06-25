@@ -146,9 +146,18 @@ h2{
   .control-btns:last-of-type,.control-btns2:last-of-type{
     left: -170px;
   }
+
+  .control-btns3 , .control-btns4 {
+  top: 90%;
+  transform: translateY(0%)!important;
+  z-index: 1002;
+  height: 50px!important;
+  width: 30px;
+
 }
-.control-btns3 {
-  /* position: fixed; */
+
+}
+.control-btns3 ,.control-btns4{
   top: 90%;
   transform: translateY(-50%);
   z-index: 1002;
@@ -165,12 +174,15 @@ h2{
   box-shadow: 0 2px 8px rgba(0,0,0,0.08);
 }
 
-.control-btns3:first-of-type {
-  left: 8px;
+.control-btns3:first-of-type ,.control-btns4:first-of-type{
+  left: 24px;   /* Increased space from left edge */
+  transform: translateX(20px);
 }
 
-.control-btns3:last-of-type {
-  right: 8px;
+.control-btns3:last-of-type , .control-btns4:last-of-type {
+  right: 24px;  /* Increased space from right edge */
+  transform: translateX(-20px);
+
 }
 
 /* Third slider styles */
@@ -296,8 +308,27 @@ footer .icon a{
   .control-btns2 {
     display: none !important;
   }
+
 }
 
 * {
   touch-action: pan-y;
 }
+
+/* Slide4 (More Works) Buttons */
+/* .control-btns4 {
+  position: relative;
+  z-index: 9;
+  margin: 0 20px;
+  height: 150px;
+  width: 50px;
+  top: 200px;
+  background-color: #0047AB;
+  font-size: 30px;
+  color: #D9D9D9;
+  font-weight: 900;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+} */
