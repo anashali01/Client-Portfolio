@@ -147,7 +147,7 @@ h2{
     left: -170px;
   }
 
-  .control-btns3 , .control-btns4 {
+  .control-btns3 {
   top: 90%;
   transform: translateY(0%)!important;
   z-index: 1002;
@@ -157,7 +157,7 @@ h2{
 }
 
 }
-.control-btns3 ,.control-btns4{
+.control-btns3 {
   top: 90%;
   transform: translateY(-50%);
   z-index: 1002;
@@ -174,12 +174,12 @@ h2{
   box-shadow: 0 2px 8px rgba(0,0,0,0.08);
 }
 
-.control-btns3:first-of-type ,.control-btns4:first-of-type{
+.control-btns3:first-of-type {
   left: 24px;   /* Increased space from left edge */
   transform: translateX(20px);
 }
 
-.control-btns3:last-of-type , .control-btns4:last-of-type {
+.control-btns3:last-of-type {
   right: 24px;  /* Increased space from right edge */
   transform: translateX(-20px);
 
@@ -213,30 +213,79 @@ h2{
 }
 
 /* Fourth slider styles */
+
+
 .slides4 {
   overflow: visible !important;
   padding-left: 0 !important;
-  padding-right: 0 !important;
-  width: 100vw;           /* Full viewport width */
-  max-width: 100vw;       /* Prevents container from limiting width */
-  margin-left: calc(-50vw + 50%); /* Center the full-width slider inside a container */
+  padding-right: 40px;
+  display: flex;
   transition: 1s;
 }
 
 .slide4 {
-  min-width: 100vw;       /* Each slide is full viewport width */
-  max-width: 100vw;
+  min-width: 50%;
+  max-width: 50%;
+  margin-left: 0 !important;
+  margin-right: 20px;
   transition: 1s;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.slide4 img {
-  width: 100vw;           /* Image fills the slide */
-  max-width: 100vw;
+/* Remove left margin from the first slide only */
+.slides4 .slide4:first-child {
+  margin-left: 0 !important;
+}
+
+.slide4 button img{
+  max-height: 535px !important;
+  max-width: 870px !important;
+  width: 100%;
   height: auto;
   display: block;
+}
+
+/* Responsive: Slide4 images (slider4) */
+@media (max-width: 992px) {
+  .slide4 button img {
+    width: 90vw !important;
+    height: auto !important;
+    max-width: 95vw;
+    max-height: 60vw;
+  }
+}
+
+@media (max-width: 768px) {
+  .slide4 {
+    min-width: 100%;
+    max-width: 100%;
+  }
+  .slide4 button img {
+    width: 98vw !important;
+    height: auto !important;
+    max-width: 98vw;
+    max-height: 60vw;
+  }
+}
+
+/* Responsive: Modal images for More Works */
+@media (max-width: 992px) {
+  .modal-dialog img {
+    width: 90vw !important;
+    height: auto !important;
+    max-width: 95vw;
+    margin-left: 0 !important;
+  }
+}
+@media (max-width: 768px) {
+  .modal-dialog img {
+    width: 98vw !important;
+    height: auto !important;
+    max-width: 98vw;
+    margin-left: 0 !important;
+  }
 }
 
 
@@ -314,21 +363,3 @@ footer .icon a{
 * {
   touch-action: pan-y;
 }
-
-/* Slide4 (More Works) Buttons */
-/* .control-btns4 {
-  position: relative;
-  z-index: 9;
-  margin: 0 20px;
-  height: 150px;
-  width: 50px;
-  top: 200px;
-  background-color: #0047AB;
-  font-size: 30px;
-  color: #D9D9D9;
-  font-weight: 900;
-  border: none;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-} */
