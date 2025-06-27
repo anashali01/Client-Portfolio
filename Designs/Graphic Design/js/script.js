@@ -7,7 +7,7 @@ const slides4 = document.querySelectorAll('.slide4');
 var counter = 0;
 var counter2 = 0;
 let counter3 = 0;
-let counter4 = 0;
+var counter4 = 0;
 
 slides.forEach(
     (slide, index) => {
@@ -38,6 +38,13 @@ const Goprev = () => {
     }
     slideImage();
 }
+const Moreprev = () => {
+    counter4--;
+    if (counter4 < 0) {
+        counter4 = slides4.length - 1; 
+    }
+    slideMore();
+}
 const Prev = () => {
     counter2--;
     if (counter2 < 0) {
@@ -59,6 +66,13 @@ const Next = () => {
     }
     slideCategory();
 }
+const Morenext = () =>{
+    counter4++;
+    if (counter4 >= slides4.length) {
+        counter4 = 0; 
+    }
+    slideMore();
+}
 
 const slideImage = () => {
     slides.forEach(
@@ -68,6 +82,20 @@ const slideImage = () => {
     );
     indicators.forEach((indicator, index) => {
         if (index === counter) {
+            indicator.classList.add('indi-active');
+        } else {
+            indicator.classList.remove('indi-active');
+        }
+    });
+}
+const slideMore = () => {
+    slides4.forEach(
+        (slide) => {
+            slide.style.transform = `translateX(-${counter4 * 100}%)`;
+        }
+    );
+    indicators.forEach((indicator, index) => {
+        if (index === counter4) {
             indicator.classList.add('indi-active');
         } else {
             indicator.classList.remove('indi-active');
@@ -104,26 +132,49 @@ function slideEco() {
     );
 }
 
-function MorePrev() {
-    counter4--;
-    if (counter4 < 0) {
-        counter4 = slides4.length - 1;
-    }
-    slideMore();
-}
-function MoreNext() {
-    counter4++;
-    if (counter4 >= slides4.length) {
-        counter4 = 0;
-    }
-    slideMore();
-}
-function slideMore() {
-    slides4.forEach(
-        (slide) => {
-            slide.style.transform = `translateX(-${counter4 * 100}%)`;
+
+// --- Touch/Drag to Slide for All Sliders ---
+
+function addTouchSlider(wrapper, counterRef, slideFn, slidesLength) {
+    let startX = 0;
+    let endX = 0;
+    let threshold = 50; // Minimum px to trigger slide
+
+    wrapper.addEventListener('touchstart', (e) => {
+        startX = e.touches[0].clientX;
+    });
+
+    wrapper.addEventListener('touchmove', (e) => {
+        endX = e.touches[0].clientX;
+        // Prevent horizontal scroll while dragging slider
+        if (Math.abs(endX - startX) > 10) {
+            e.preventDefault();
         }
-    );
+    }, { passive: false });
+
+    wrapper.addEventListener('touchend', (e) => {
+        let diff = endX - startX;
+        if (Math.abs(diff) > threshold) {
+            if (diff > 0) {
+                // Swipe right (previous)
+                window[counterRef]--;
+                if (window[counterRef] < 0) window[counterRef] = slidesLength - 1;
+            } else {
+                // Swipe left (next)
+                window[counterRef]++;
+                if (window[counterRef] >= slidesLength) window[counterRef] = 0;
+            }
+            slideFn();
+        }
+        // Reset
+        startX = 0;
+        endX = 0;
+    });
 }
+
+// Add touch/drag to all sliders
+addTouchSlider(document.querySelector('.slides'), 'counter', slideImage, slides.length);
+addTouchSlider(document.querySelector('.slides2'), 'counter2', slideCategory, slides2.length);
+addTouchSlider(document.querySelector('.slides4'), 'counter4', slideMore, slides4.length);
 
 // ---------------------- Card Section Slider End ------------------
