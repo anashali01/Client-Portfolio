@@ -47,10 +47,10 @@ body {
     gap: 1rem;
 }
 
-.scroller[data-animated="true"] {
+/* .scroller[data-animated="true"] {
     overflow: hidden;
 
-}
+} */
 
 .scroller[data-animated="true"] .scroller__inner {
     width: max-content;
@@ -99,10 +99,10 @@ body {
     margin-top: 650px;
 }
 
-.hero-section .image {
+/* .hero-section .image {
     margin-right: 170px;
     margin-top: -120px;
-}
+} */
 
 /* A  B  O  U  T  -  M  E */
 .about-me .text{ 

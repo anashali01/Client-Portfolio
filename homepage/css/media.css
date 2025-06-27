@@ -11,6 +11,12 @@
 /* Small devices (smartphones) */
 @media screen and (min-width: 576px) {
 
+     .hero-section .image {
+        margin-right: -50px;
+        margin-top: -120px;
+        height: 700px;
+    }
+
     .ui-ux-work .image img,
     .graphics-work .image img {
         height: 400px;
@@ -69,6 +75,7 @@
     .hero-section .image {
         margin-right: -180px;
         margin-top: -120px;
+        height: 1200px;
     }
 
 
@@ -100,19 +107,21 @@
     }
 
     .hero-section .image {
-        margin-right: 170px;
+        margin-right: 250px;
         margin-top: -120px;
+        height: 1200px;
     }
-    .cv .cv-description {
-    background-color: #222222;
-    padding: 15px 40px;
-    border-radius: 20px;
-}
 
-.cv-description p {
-    font-size: 32px;
-    color: whitesmoke;
-}
+    .cv .cv-description {
+        background-color: #222222;
+        padding: 15px 40px;
+        border-radius: 20px;
+    }
+
+    .cv-description p {
+        font-size: 32px;
+        color: whitesmoke;
+    }
 }
 
 /* Extra large devices (large desktops) */
