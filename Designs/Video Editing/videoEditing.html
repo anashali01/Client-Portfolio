@@ -37,33 +37,38 @@
 
   <header>
     <!-- N  A  V  B  A  R -->
-    <nav class="navbar custom-navbar my-3">
+    <nav class="navbar navbar-expand-lg custom-navbar my-3">
       <div class="container justify-content-center">
-        <ul class="nav nav-pills justify-content-center w-100">
-          <li class="nav-item">
-            <a class="nav-link text-white" href="../../index.html">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link text-white" href="../../Graphic Design/graphicDesign.html">Designs</a>
-          </li>
-          <li class="nav-item ms-auto">
-            <a class="nav-link text-white" href="../../About me/aboutme.html">About Me</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link text-white" href="../../Resourcespage/resource.html">Resources</a>
-          </li>
-        </ul>
+        <a class="navbar-brand d-lg-none text-white" href="../../index.html">Najeebali Saiyed</a>
+        <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar"
+          aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-center" id="mainNavbar">
+          <ul class="nav nav-pills w-100 justify-content-center">
+            <li class="nav-item">
+              <a class="nav-link text-white" href="../../index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="../../Graphic Design/graphicDesign.html">Designs</a>
+            </li>
+            <li class="nav-item ms-lg-auto">
+              <a class="nav-link text-white" href="../../About me/aboutme.html">About Me</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="../../Resourcespage/resource.html">Resources</a>
+            </li>
+          </ul>
+        </div>
       </div>
     </nav>
 
     <!-- GRAPHICS / UI DESIGN SELECTOR -->
 
     <div class="container work-selector text-center">
-      <button class="rounded-pill p-2 "><a href="./uiux.html" class="text-decoration-none">UI/UX DESIGNS</a></button>
-      <button class="rounded-pill p-2 "><a href="../Graphic Design/graphicDesign.html"
-          class="text-decoration-none">GRAPHICS DESIGNS</a></button>
-      <button class="rounded-pill p-2 work-active"><a href="../Video Editing/videoEditing.html"
-          class="text-decoration-none">VIDEO EDITING</a></button>
+        <button class="rounded-pill p-2"><a href="../UX Designs/uiux.html" class="text-decoration-none">UI/UX DESIGNS</a></button>
+        <button class="rounded-pill p-2"><a href="../Graphic Design/graphicDesign.html" class="text-decoration-none">GRAPHICS DESIGNS</a></button>
+        <button class="rounded-pill p-2 work-active"><a href="./videoEditing.html" class="text-decoration-none">VIDEO EDITING</a></button>
     </div>
 
   </header>
@@ -79,14 +84,14 @@
     <section class="posters">
       <div class="container">
         <div class="row mx-auto">
-          <div class="col-4">
-            <video controls muted style="height: 410px;" src="./assets/Sm1.mp4"></video>
+          <div class="col-lg-4 col-12">
+            <video controls muted style="height: 410px;" src="./assets/Sm1.mp4" class="d-block mx-auto mt-3"></video>
           </div>
-          <div class="col-4">
-            <video controls muted style="height: 410px;" src="./assets/Sm2.mp4"></video>
+          <div class="col-lg-4 col-12">
+            <video controls muted style="height: 410px;" src="./assets/Sm2.mp4" class="d-block mx-auto mt-3"></video>
           </div>
-          <div class="col-4">
-            <video controls muted style="height: 410px;" src="./assets/Sm3.mp4"></video>
+          <div class="col-lg-4 col-12">
+            <video controls muted style="height: 410px;" src="./assets/Sm3.mp4" class="d-block mx-auto mt-3"></video>
           </div>
         </div>
       </div>
