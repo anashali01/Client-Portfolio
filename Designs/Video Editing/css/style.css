@@ -155,6 +155,12 @@ h2{
     }
 }
 
+@media (max-width: 768px) {
+  .control-btns4 {
+    display: none !important;
+  }
+}
+
 .slides1 , .slides2 , .slides3 {
   overflow: visible !important;
   padding-left: 0 !important;
@@ -196,7 +202,7 @@ h2{
   min-width: 50%;
   max-width: 50%;
   margin-left: 0 !important;
-  margin-right: 20px;
+  margin-right: -200px; /* Reduced from 20px */
   transition: 1s;
   display: flex;
   justify-content: center;
@@ -229,6 +235,7 @@ h2{
   .slide4 {
     min-width: 100%;
     max-width: 100%;
+    margin-right: 24px !important; /* Increase margin between slides */
   }
   .slide4 img {
     width: 98vw !important;

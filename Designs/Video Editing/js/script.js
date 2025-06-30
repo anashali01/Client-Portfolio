@@ -111,7 +111,7 @@ const WebPrev = () => {
 }
 const WebNext = () =>{
     counter4++;
-    if (counter4 >= slides4.length) {
+    if (counter4 >= slides4.length-1) {
         counter4 = 0; 
     }
     slideWeb();
