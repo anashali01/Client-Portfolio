@@ -10,6 +10,12 @@ body{
     overflow-x: hidden;
     font-family: 'MODERNIZ', 'Michroma', sans-serif;
 }
+html, body {
+  overflow-x: hidden !important;
+  width: 100vw !important;
+  max-width: 100vw !important;
+  position: relative;
+}
 
 
 /* For the slider container, allow overflow so slides can peek out */
@@ -153,6 +159,10 @@ h2{
     .control-btns4:last-of-type{
         left: -170px;
     }
+  .control-btns3 {
+    top: 120% !important;
+    transform: translateY(-20%) !important;
+  }
 }
 
   .slide4 video{
