@@ -9,9 +9,54 @@
 }
 
 /* Small devices (smartphones) */
+@media screen and (min-width: 395px) {
+    .hero-section .image {
+        margin-right: -120px;
+        margin-top: -120px;
+        height: 675px;
+    }
+
+    .about-me .text {
+        background-color: #222222;
+        color: #CCCCCC;
+        padding: 20px 25px;
+        border-radius: 25px;
+    }
+
+    .about-me h2 {
+        font-size: 44px;
+        padding: 20px 0px;
+    }
+
+    .about-me p {
+        font-size: 18px;
+        padding: 20px 0px;
+    }
+
+    .about-me .btn {
+        background-color: #CCCCCC;
+        margin: 20px 0px;
+    }
+
+    .about-me .btn a {
+        color: #222222 !important;
+        padding: 11px 30px;
+    }
+    .ui-ux-work .image img{
+        height: 300px;
+        /* margin-top: 25px; */
+    }
+    .graphics-work .image img{
+        height: 480px;
+    }
+    footer .content h2{
+        font-size: 65px;
+    }
+}
+
 @media screen and (min-width: 576px) {
 
-     .hero-section .image {
+    .hero-section .image {
         margin-right: -50px;
         margin-top: -120px;
         height: 700px;
