@@ -125,7 +125,9 @@ body {
     padding: 20px 0px;
 }
 
-.about-me .btn a , .ui-ux-work .text .btn a{
+.about-me .btn a , .ui-ux-work .text .btn a,
+.graphics-work .text .btn a,
+.video-work .text .btn a{
     position: relative;
     color: #CCCCCC !important;
     padding: 11px 100px;
@@ -140,7 +142,11 @@ body {
 .about-me .btn a::before,
 .about-me .btn a::after,
 .ui-ux-work .text .btn a::before,
-.ui-ux-work .text .btn a::after {
+.ui-ux-work .text .btn a::after,
+.graphics-work .text .btn a::before,
+.graphics-work .text .btn a::after,
+.video-work .text .btn a::before,
+.video-work .text .btn a::after {
     content: '';
     position: absolute;
     left: 0;
@@ -153,29 +159,39 @@ body {
 }
 
 .about-me .btn a::before,
-.ui-ux-work .text .btn a::before  {
+.ui-ux-work .text .btn a::before,
+.graphics-work .text .btn a::before,
+.video-work .text .btn a::before{
     background: #CCCCCC;
     transform: translateX(-100%);
 }
 
 .about-me .btn a::after,
-.ui-ux-work .text .btn .btn a::after{
+.ui-ux-work .text .btn a::after,
+.graphics-work .text .btn a::after,
+.video-work .text .btn a::after{
     background: rgba(0, 0, 0, 0.08);
     opacity: 0;
 }
 
 .about-me .btn a:hover,
-.ui-ux-work .text .btn a:hover {
+.ui-ux-work .text .btn a:hover,
+.graphics-work .text .btn a:hover,
+.video-work .text .btn a:hover{
     color: #222222 !important;
 }
 
 .about-me .btn a:hover::before,
-.ui-ux-work .text .btn a:hover::before {
+.ui-ux-work .text .btn a:hover::before,
+.graphics-work .text .btn a:hover::before,
+.video-work .text .btn a:hover::before{
     transform: translateX(0);
 }
 
 .about-me .btn a:hover::after,
-.ui-ux-work .text .btn a:hover::after {
+.ui-ux-work .text .btn a:hover::after,
+.graphics-work .text .btn a:hover::before,
+.video-work .text .btn a:hover::before{
     opacity: 1;
 }
 
