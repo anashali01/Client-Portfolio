@@ -9,11 +9,15 @@
 }
 
 /* Small devices (smartphones) */
-@media screen and (min-width: 395px) {
+@media screen and (max-width: 395px) {
     .hero-section .image {
-        margin-right: -120px;
+        margin-right: -80px !important;
         margin-top: -120px;
-        height: 675px;
+        height: 575px !important;
+    }
+
+    .about-me .btn a {
+        padding: 11px 30px;
     }
 
     .about-me .text {
@@ -24,31 +28,44 @@
     }
 
     .about-me h2 {
-        font-size: 44px;
+        font-size: 34px;
         padding: 20px 0px;
     }
 
     .about-me p {
-        font-size: 18px;
+        font-size: 12px;
         padding: 20px 0px;
     }
 
+    .service h2 {
+        font-size: 35px !important;
+    }
 
+    .ui-ux-work .text h2,
+    .graphics-work .text h2,
+    .video-work .text h2 {
+        font-size: 25px;
+        padding-top: 35px !important;
+    }
+    .ui-ux-work .text .btn a,
+    .graphics-work .text .btn a,
+    .video-work .text .btn a{
+        padding: 11px 30px;
+    }
     .ui-ux-work .image img {
         height: 300px;
-        /* margin-top: 25px; */
+        margin-top: 25px !important;
     }
-
     .graphics-work .image img {
         height: 480px;
+        margin-bottom: 25px !important;
     }
-
     footer .content h2 {
         font-size: 65px;
     }
 }
 
-@media screen and (min-width: 576px) {
+@media screen and (max-width: 576px) {
 
     .hero-section .image {
         margin-right: -50px;
@@ -96,7 +113,7 @@
 }
 
 /* Medium devices (tablets) */
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 768px) {
 
     .ui-ux-work .image img {
         height: 100%;
@@ -128,7 +145,9 @@
         object-fit: cover;
     }
 
-    .ui-ux-work .text h2 , .graphics-work .text h2 , .video-work .text h2{
+    .ui-ux-work .text h2,
+    .graphics-work .text h2,
+    .video-work .text h2 {
         font-size: 40px;
         padding-bottom: 20px !important;
         font-weight: 900;
@@ -172,7 +191,7 @@
 }
 
 /* Extra large devices (large desktops) */
-@media screen and (min-width: 1200px) {}
+@media screen and (max-width: 1200px) {}
 
 /* XXL devices (larger desktops) */
-@media screen and (min-width: 1400px) {}
+@media screen and (max-width: 1400px) {}
