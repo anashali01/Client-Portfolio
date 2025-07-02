@@ -61,11 +61,11 @@ body {
 }
 
 .scroller[data-direction='left'] {
-    --_animation-direction: forwards;
+    --_animation-direction: reverse;
 }
 
 .scroller[data-direction='right'] {
-    --_animation-direction: reverse;
+    --_animation-direction: forwards;
 }
 
 .scroller[data-direction='slow'] {
