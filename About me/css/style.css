@@ -109,10 +109,11 @@ body {
     background-color: #000;
     transition: height 0.3s ease;
     z-index: -1;
+    color: #222222;
 }
 
 .btn:hover {
-    color: #fff;
+    color: #fff !important;
 }
 
 .btn:hover::after {
@@ -189,19 +190,28 @@ body {
 .achievements h2 {
     color: #222222;
     font-size: 40px;
+    font-family: 'MODERNIZ';
+    margin-top: 27px;
 }
 
 .achievements .certificate-1 img,
 .achievements .certificate-2 img,
-.achievements .certificate-3 img {
+.achievements .certificate-3 img,
+.achievements .certificate-4 img,
+.achievements .certificate-5 img,
+.achievements .certificate-6 img{
     width: 100%;
 }
 
 .achievements .certificate-1 h3,
 .achievements .certificate-2 h3,
-.achievements .certificate-3 h3 {
+.achievements .certificate-3 h3,
+.achievements .certificate-4 h3,
+.achievements .certificate-5 h3,
+.achievements .certificate-6 h3 {
     color: #222222;
     font-size: 40px;
+    font-family: 'MODERNIZ';
 }
 
 /* V I D E O - W O R k - S E C T I O N  */
